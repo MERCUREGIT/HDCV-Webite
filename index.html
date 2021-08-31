@@ -1,956 +1,1510 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HDCV</title>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-<link href="css/master.css" rel="stylesheet">
-<link rel="stylesheet" href="plugins/iview/css/iview.css" type='text/css' media='all' />
-<link rel="stylesheet" href="plugins/iview/css/skin/style.css" type='text/css' media='all' />
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script src= "js/jquery-migrate-1.2.1.js" ></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/bootstrap-3.1.1.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hope – Health & Medical HTML5 Template</title>
+    <!--== Favicon ==-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <!--== Main Style CSS ==-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
-<div class="layout-theme animated-css"  data-header="sticky" data-header-top="200"  > 
-  
-  <!-- Loader Landing Page -->
-  <!-- <div id="ip-container" class="ip-container">  -->
-    <!-- initial header -->
-    <!-- <header class="ip-header" >
-      <div class="ip-loader">
-        <div class="text-center">
-          <div class="ip-logo"><img  src="img/logo.png" height="50" width="294" alt="logo"></div>
-        </div>
-        <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
-        <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,39.3,10z"/>
-        <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-        </svg> </div>
-    </header>
-  </div> -->
-  <!-- Loader end -->
-
-  <div class="top-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 text-left">
-          <ul class="social-links">
-            <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
-            <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
-            <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
-            <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
-            <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
-          </ul>
-        </div>
-        <div class="top-header__links col-sm-7">
-          <div class="langues du groupe btn">
-            <button type="button" class="btn_languages dropdown-toggle" data-toggle="dropdown"><i class="icon_globe-2"></i>Francais-Cameroun<span class="caret color_primary"></i span></button>
-            <!-- <ul class="menu déroulant" role="menu">
-              <li><a href="javascript:void(0);">Anglais UK1</a></li>
-              <li><a href="javascript:void(0);">Anglais UK2</a></li>
-            </ul> -->
-          </div>
-          <a href="javascript:void(0);">Horaires hospitaliers</a> <a href="javascript:void(0);">Prendre rendez-vous</a> </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- HEADER -->
-  <div class="header">
-    <div class="container">
-      <div class="header-inner">
-        <div class="row">
-          <div class="col-md-4 col-xs-12"> <a href="index.html" class="logo"> <img class="logo__img" src="img/logo.png" height="50" width="50" alt="Logo"> </a> </div>
-          <div class="col-md-8 col-xs-12">
-            <div class="header-block">
-              <span class="header-label"> <i class="icon-header icon-call-in color_primary">
-                </i> <span class="helper"> Call Us <a href="tel:+522 234 56789"><strong>+237 622-22-87-34 | +237 622-22-12-73</strong></a></span>
-            </span>
-              <span class="header-label">
-                <i class="icon-header icon-envelope-open color_primary"></i> <span class="helper"> Email us <a href="contact.hdcv@gmail.com"><strong>contact.hdcv@gmail.com</strong></a></span>
-              </span>
-              <!-- <span>
-                <span class="helper"> 
-                 <br> Boite Postale <a href="javascript:void(0)"><strong>B.P 3604 Messa-Yaoundé</strong></a></span>
-              </span> -->
-            </div>
-            <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
-              <input type="text" value="" id="search-mobile" name="s" >
-              <button type="submit"><i class="icon fa fa-search"></i></button>
-            </form>
+  <body>
+    <!--wrapper start-->
+    <div class="wrapper home-default-wrapper">
+      <!--== Start Preloader Content ==-->
+      <div class="preloader-wrap">
+        <div class="preloader">
+          <span class="dot"></span>
+          <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
-      <!-- end header-inner--> 
-    </div>
-    <!-- end container-->
-    
-    <div class="top-nav ">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12  col-xs-12">
-            <div class="navbar yamm " >
-              <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
-                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a href="#" class="navbar-brand">Menu</a> </div>
-              <div id="navbar-collapse-1" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                  <li class="dropdown"><a href="index.html">Accueil</a></li>
-                  <li class="dropdown"><a href="javascript:void(0) "  >À PROPOS </a>
+      <!--== End Preloader Content ==-->
+
+      <!--== Start Header Wrapper ==-->
+      <header class="header">
+        <!-- header-top start -->
+        <div class="header-top d-none d-lg-block">
+          <div class="container">
+            <div class="row row-cols-2">
+              <div class="col">
+                <p>
+                  <i class="icofont-google-map"></i> <span>ADDRESS:</span> 568
+                  Elizaberth Str, London, UK
+                </p>
+              </div>
+              <div class="col">
+                <ul class="social-links text-end">
+                  <li>
+                    <a href="#"><i class="icofont-twitter"></i></a>
                   </li>
-                  <li class="dropdown"><a href="javascript:void(0) "  > SERVICES <b class="caret color_primary"></b> </a>
-                    <ul role="menu" class="dropdown-menu">
-                      <li> <a href="javascript:void(0) "  > service</a> </li>
-                      <!-- <li> <a href="services-details.html"  > services details</a> </li> -->
-                      <li> <a href="javascript:void(0) "  > services departments</a> </li>
-                    </ul>
+                  <li>
+                    <a href="#"><i class="icofont-facebook"></i></a>
                   </li>
-                  <li><a href="javascript:void(0) "  >APPOINTMENT FORM </a> </li>
-                  <li><a href="javascript:void(0) "  >GALERIE</a> </li>
-                  <li><a href="javascript:void(0) "  >CONTACT </a> </li>
+                  <li>
+                    <a href="#"><i class="icofont-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icofont-rss-feed"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icofont-play-alt-1"></i></a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!--end top-nav --> 
-  </div>
-  <!-- HEADER END -->
-  
-  <div id="iview" class="main-slider">
-    <div data-iview:thumbnail="media/slider_main/1.jpg" data-iview:image="media/slider_main/1.jpg" data-iview:transition="block-drop-random" >
-      <div class="conteneur">
-        <div class="iview-caption bg-no-caption" data-x="660" data-y="143" data-transition="expandLeft">
-          <div class="custom-caption">
-            <p class="slide-title bg-color_second">Hôpital de District de la Cité Verte, à l’écoute <br> de vos problèmes de santé</p>
-            <p class="slide-title_second">Pour prendre soin de votre santé</p>
-            <p class="slide-text">Une équipe de professionnels de la santé</p>
-            <!-- <p class="slide-text"></p> -->
-            <a href="javascript:void(0);" class="btn bg-color_primary">consultez-vous en ligne <span class="btn-plus">+</span></a> </div>
+        <!-- header-top end -->
+
+        <!-- header-middle start -->
+        <div class="header-middle mobile-sticky">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="header-middle-content">
+                  <div class="header-logo">
+                    <a href="index.html">
+                      <img
+                        class="sticky-img"
+                        src="assets/img/logo.png"
+                        alt="Logo"
+                      />
+                    </a>
+                  </div>
+                  <ul class="media-wrap d-none d-lg-flex">
+                    <!-- media-list start -->
+                    <li class="media media-list">
+                      <span class="media-icon"
+                        ><i class="icofont-clock-time"></i
+                      ></span>
+                      <div class="media-content">
+                        <span class="media-sub-heading">working hours</span>
+                        <span class="media-heading"
+                          >MON - FRI: 9.00 - 21.00
+                        </span>
+                      </div>
+                    </li>
+                    <!-- media-list end -->
+
+                    <!-- media-list start -->
+                    <li class="media media-list">
+                      <span class="media-icon"
+                        ><i class="icofont-ui-call"></i
+                      ></span>
+                      <div class="media-content">
+                        <span class="media-sub-heading">hotline 24/7</span>
+                        <a class="media-heading" href="tel:+0962-58-58-258"
+                          >+0962-58-58-258</a
+                        >
+                      </div>
+                    </li>
+                    <!-- media-list end -->
+
+                    <!-- media-list start -->
+                    <li class="media media-list">
+                      <span class="media-icon"
+                        ><i class="icofont-envelope"></i
+                      ></span>
+                      <div class="media-content">
+                        <span class="media-sub-heading">email us</span>
+                        <a
+                          class="media-heading"
+                          href="mailto:support@clenora.com.uk"
+                          >support@clenora.com.uk</a
+                        >
+                      </div>
+                    </li>
+                    <!-- media-list end -->
+                  </ul>
+                  <a
+                    href="#"
+                    class="book-now-btn d-none d-sm-inline-block d-lg-none"
+                    >book an appointment</a
+                  >
+                  <div class="mobile-menu-toggle d-lg-none">
+                    <a href="#offcanvas-mobile-menu" class="offcanvas-toggle">
+                      <svg viewBox="0 0 800 600">
+                        <path
+                          d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                          id="top"
+                        ></path>
+                        <path d="M300,320 L540,320" id="middle"></path>
+                        <path
+                          d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                          id="bottom"
+                          transform="translate(480, 320) scale(1, -1) translate(-480, -318)"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div data-iview:thumbnail="media/slider_main/2.jpg" data-iview:image="media/slider_main/2.jpg" data-iview:transition="block-drop-random" >
-      <div class="conteneur">
-        <div class="iview-caption bg-no-caption" data-x="260" data-y="293" data-transition="expandLeft">
-          <div class="custom-caption">
-            <p class="slide-title bg-color_second">Une équipe de professionnels de la santé</p>
-            <p class="slide-title_second">Pour prendre soin de votre santé</p>
-            <!-- <p class="slide-text">Sed posuere nunc libero pellentesque vitae</p>
-            <p class="slide-text">Vestibulum tincidunt ante ipsum</p> -->
-            <a href="javascript:void(0);" class="btn bg-color_primary">VOIR LES SERVICES <span class="btn-plus">+</span></a> </div>
+        <!-- header-middle end -->
+
+        <!-- header-bottom start -->
+        <div class="header-bottom d-none d-lg-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="d-flex flex-wrap align-items-center justify-content-between"
+                >
+                  <ul class="main-menu">
+                    <li class="active">
+                      <a class="main-menu-link" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="services.html"
+                        >Services</a
+                      >
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="sub-menu-link" href="services.html"
+                            >Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="sub-menu-link" href="service-details.html"
+                            >Service Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a class="main-menu-link" href="blog.html">Blog</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="sub-menu-link" href="blog.html"
+                            >Blog list</a
+                          >
+                        </li>
+                        <li>
+                          <a class="sub-menu-link" href="blog-details.html"
+                            >Blog Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a class="main-menu-link" href="about.html">About</a>
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                  </ul>
+                  <a href="#" class="book-now-btn">book an appointment</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- end iview -->
-  
-  <div class="container">
-    <div class="block-hourse bg bg_1 bg_transparent wow zoomIn" data-wow-delay="1s">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="block-hourse__inner block-hourse__inner_first">
-            <p class="block-hourse__text"><i class="icon icon-note"></i>Besoin d'un médecin pour un contrôle ?</p>
-            <p class="block-hourse__title">PRENDRE JUSTE UN RENDEZ-VOUS</p>
-            <a class="btn btn_transparent" href="javascript:void(0);">OBTENIR UN RENDEZ-VOUS</a> </div>
+        <!-- header-bottom end -->
+        <!-- header-bottom start -->
+        <div class="header-bottom sticky-header d-none d-lg-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="d-flex flex-wrap align-items-center justify-content-between"
+                >
+                  <ul class="main-menu">
+                    <li class="active">
+                      <a class="main-menu-link" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="services.html"
+                        >Services</a
+                      >
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="sub-menu-link" href="services.html"
+                            >Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="sub-menu-link" href="service-details.html"
+                            >Service Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a class="main-menu-link" href="blog.html">Blog</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="sub-menu-link" href="blog.html"
+                            >Blog list</a
+                          >
+                        </li>
+                        <li>
+                          <a class="sub-menu-link" href="blog-details.html"
+                            >Blog Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a class="main-menu-link" href="about.html">About</a>
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                  </ul>
+                  <a href="#" class="book-now-btn">book an appointment</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <section class="col-md-6">
-          <div class="block-hourse__inner block-hourse__inner_second">
-            <div class="block-hourse__title-table"><i class="icon icon-clock"></i>HORAIRES D'OUVERTURE</div>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Lundi - Vendredi</td>
-                  <td><span class="line-bottom"></span></td>
-                  <td>08h00 - 22h00</td>
-                </tr>
-                <tr>
-                  <td>Samedi - Dimanche</td>
-                  <td><span class="line-bottom"></span></td>
-                  <td>09h00 - 18h00</td>
-                </tr>
-                <tr>
-                  <td>Services d'urgence</td>
-                  <td><span class="line-bottom"></span></td>
-                  <td>Ouvert 24h/7</td>
-                </tr>
-              </tbody>
-            </table>
+        <!-- header-bottom end -->
+      </header>
+
+      <!--== End Header Wrapper ==-->
+
+      <main class="main-content site-wrapper-reveal">
+        <!--== Start Hero Area Wrapper ==-->
+        <section class="hero-slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- swiper-slide start -->
+              <div
+                class="swiper-slide"
+                data-bg-img="assets/img/slider/slide1.jpg"
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="slider-content">
+                        <p class="text animated delay1">
+                          feel the difference with us
+                        </p>
+                        <h2 class="title animated delay2">
+                          Your Health <span>Is</span>
+                          <span class="d-block">Our Priority</span>
+                        </h2>
+                        <a href="#" class="btn btn-danger me-3 animated delay1"
+                          >Get a quote</a
+                        >
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary animated delay2"
+                          >our services</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- swiper-slide end -->
+              <!-- swiper-slide start -->
+              <div
+                class="swiper-slide"
+                data-bg-img="assets/img/slider/slide2.jpg"
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="slider-content">
+                        <p class="text animated delay1">
+                          feel the difference with us
+                        </p>
+                        <h2 class="title animated delay2">
+                          Your Health <span>Is</span>
+                          <span class="d-block">Our Priority</span>
+                        </h2>
+                        <a href="#" class="btn btn-danger me-3 animated delay1"
+                          >Get a quote</a
+                        >
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary animated delay2"
+                          >our services</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- swiper-slide end -->
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="icofont-arrow-left"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="icofont-arrow-right"></i>
+            </div>
           </div>
         </section>
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end block-hourse --> 
-  </div>
-  <!-- end container -->
-  
-  <section class="advantages wow fadeInUp" data-wow-delay="1.5s">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 class="ui-title-block">Bienvenue à <strong class="font-weight_600">Hopital Distrcit</strong><span class="font-weight-norm color_primary"> De la Cité Verte</span></h1>
-          <div class="ui-subtitle-block">Nos médecins spécialistes se soucient de vous et de la santé de votre famille</div>
-        </div>
-        <section class="advantages__inner col-sm-4"> <i class="icon flaticon-medical51 color_second"></i>
-          <h2 class="ui-title-inner">Professionnels de la santé</h2>
-          <i class="decor-brand"></i>
-          <p class="ui-text text-center">Nous avons des professionnels hautement qualifiés, disponibles 24h/24 et 7j/7 pour vos problèmes de santé</p>
-          <a class="btn btn_small" href="javascript:void(0);">APPRENDRE ENCORE PLUS</a> </section>
-        <section class="advantages__inner col-sm-4"> <i class="icon flaticon-medical109 color_second"></i>
-          <h2 class="ui-title-inner">Excellence médicale</h2>
-          <i class="decor-brand"></i>
-          <p class="ui-text text-center">Par la participation du patient et des professionnels de santé à la décision médicale, HDCV crée un cadre bien outillé pour la prise en charge des malades</p>
-          <a class="btn btn_small" href="javascript:void(0);">APPRENDRE ENCORE PLUS</a> </section>
-        <section class="advantages__inner col-sm-4"> <i class="icon flaticon-healthcare6 color_second"></i>
-          <h2 class="ui-title-inner">A jour avec le matériel médical</h2>
-          <i class="decor-brand"></i>
-          <p class="ui-text text-center">Garder la course avec la technologie est un signe d'assurance pour nous que nous resterons à la pointe des installations médicales de notre communauté</p>
-          <a class="btn btn_small" href="javascript:void(0);">APPRENDRE ENCORE PLUS</a> </section>
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </section>
-  <!-- end advantages -->
-  <section class="section bg bg_2 bg_transparent text-center">
-  
-  <div class="icon-tabs-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="ui-title-block color_white">Nos <strong>Avantages</strong></h2>
-          <div class="ui-subtitle-block no-spacing">Vous  avez  plusieurs  raisons  de  nous  choisir !</div>
-        </div>
-        <div class="icon-tabs">
-          <div class="col-md-6 wow bounceInLeft">
-            <ul class="list-icons ">
-              <li class="active ">
-              <a href="#icontab1" aria-controls="icontab1" role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper "><i class="icon fa fa-ambulance"></i></span></a></li>
-              <li> <a href="#icontab2" aria-controls="icontab2"  role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper"><i class="icon fa fa-heartbeat"></i></span></a></li>
-              <li> <a href="#icontab3" aria-controls="icontab3"  role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper"><i class="icon fa fa-hospital-o"></i></span></a></li>
-              <li> <a href="#icontab4" aria-controls="icontab4"  role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper"><i class="icon fa fa-user-md"></i></span></a></li>
-              <li> <a href="#icontab5" aria-controls="icontab5"  role="tab" data-toggle="tab"><span class="icon-round bg-color_second helper"><i class="icon fa fa-shield"></i></span></a></li>
-            </ul>
-          
-          </div>
-          <div class="col-md-6 text-right wow bounceInRight"> 
-            
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="icontab1"><img src="media/530x270/1.jpg" height="270" width="530" alt="Foto">
-              
-              <div class="tab-info">
-              
-                <p class="title-small">ENGAGEMENT – Nous tenons nos promesses !</p>
-            <p class="ui-text text-center color_light-grey">L’hôpital de la cité verte, a pour premier obligation votre satisfaction et est un hôpital de quatrième catégorie qui offre un paquet complémentaire d’activité. Et c’est un hôpital de référence dans le district de santé </p>
-            
-            </div>
-              
+        <!--== End Hero Area Wrapper ==-->
+
+        <!-- static media start -->
+        <section class="static-media">
+          <div class="container">
+            <div class="row mb-n4">
+              <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="title">Diagnose</h4>
+                    <p>Examination & Diagnosis</p>
+                  </div>
+                  <span class="icon icofont-stethoscope-alt"></span>
+                </div>
               </div>
-              <div role="tabpanel" class="tab-pane" id="icontab2"><img src="media/530x270/1.jpg"  alt="Foto">
-              
-              <div class="tab-info">
-              
-                <!-- <p class="title-small">Nunc  mollis ligula aliquet!</p> -->
-            <!-- <p class="ui-text text-center color_light-grey">Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nuc placerat cursus In sodales purus non nisi.  Suspendisse justo elit vulputate vel sodales sit amet convallis vel dolor.</p> -->
-            
-            </div>
-              
+              <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="title">Treatment</h4>
+                    <p>Treatment of the disease</p>
+                  </div>
+                  <span class="icon icofont-brain-alt"></span>
+                </div>
               </div>
-              <div role="tabpanel" class="tab-pane" id="icontab3"><img src="media/530x270/1.jpg"  alt="Foto">
-              
-              
-              <div class="tab-info">
-              
-                <!-- <p class="title-small">Pellentesque sem class aptent</p> -->
-            <!-- <p class="ui-text text-center color_light-grey">Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nuc placerat cursus In sodales purus non nisi. Aliquam orci lacus, mattis nec ornare sed</p> -->
-            
-            </div>
-            
-            
-            </div>
-              <div role="tabpanel" class="tab-pane" id="icontab4"><img src="media/530x270/1.jpg"  alt="Foto">
-              
-              <div class="tab-info">
-              
-                <!-- <p class="title-small">Donec id sapien sed ipsum</p> -->
-            <!-- <p class="ui-text text-center color_light-grey">Justo laoreet dignis sim lectus duic etiamd ipsum habitant tristique nam est. Donec venenatis leo eu varius curus da metus nuc placerat cursus In sodales purus non nisi. </p> -->
-            
-            </div>
-            
-            </div>
-              <div role="tabpanel" class="tab-pane" id="icontab5"><img src="media/530x270/1.jpg"  alt="Foto">
-              
-              <div class="tab-info">
-              
-                <!-- <p class="title-small">Why Primary Health Care</p> -->
-            <!-- <p class="ui-text text-center color_light-grey">Aliquam orci lacus, mattis nec ornare sed, varius eget, turpis. Donec eget massa velit interdum interdum. Cras vehicula, pede a viverra varius pede sapien commodo turpis et blandit ut nisi. Eonec pede</p> -->
-            
-            </div>
-            
-            
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end row --> 
-    </div>  </div>
-    <!-- end container --> 
-  </section>
-  <!-- end section -->
-  
- 
-  
-  <div class="section-large bg ">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 wow bounceInRight" data-wow-delay="1s">
-          <div class="padd_left_20">
-            <h2 class="ui-title-block text-center  ui-title-block_small"> Nos <span>Services, Specialitées & Departments</span></h2>
-            <div class="panel-group accordion" id="accordion">
-              <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div class="panel panel-default">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-1"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Clinique du Diabète et de l’hypertension artérielle</h3>
-                        </div>
-                        <div id="collapse-1" class="panel-collapse  collapse in">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Cette clinique est chargée de la prévention de la prise en charge des maladies métaboliques et de leur complication. Elle s’assure en liaison avec la pharmacie de la disponibilité des médicaments usuels à des taux préférentiels.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-2"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Centre de Diagnostic et de traitement de la Tuberculose </h3>
-                        </div>
-                        <div id="collapse-2" class="panel-collapse  collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Il est chargé de la prévention, du traitement des pneumopathies évolutives à germes spécifiques, il permet aux patients de bénéficier d’un traitement à moindre cout. La recherche des perdus de vue et la lutte contre les abandons de traitement est également de leur ressort. Le personnel travaille en étroite collaboration avec l’UPEC.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-3"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Unité de prise en charge des personnes zéro positive</h3>
-                        </div>
-                        <div id="collapse-3" class="panel-collapse  collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Cette structure a la particularité de s’occuper des personnes exposées au VIH, des personnes malades, et celles atteintes des maladies opportunistes. Ce service après counseling de dépistage, dispense des médicaments, élabore des stratégies de prise en charge globale en conformité avec la politique nationale. A ce jour la file active des patients est constituée de plus de 4000 patients.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-4"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Les urgences & Petite chirurgie</h3>
-                        </div>
-                        <div id="collapse-4" class="panel-collapse  collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Ce service est chargé de l’accueil des patients, de la prise en charge   immédiate et de la desserte triée dans les autres services ou spécialités. Les accidentés de la voie publique sont également conduits dans ces locaux pour recevoir les premiers soins.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-5"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">service des  hospitalisations pédiatriques</h3>
-                        </div>
-                        <div id="collapse-5" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Il est le prolongement des consultations pédiatriques et héberge les patients d’âge pédiatrique. </p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-6"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Service Hospitalisations médecine Hommes et Femmes </h3>
-                        </div>
-                        <div id="collapse-6" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Ce service héberge les sujets des deux sexes afin d’approfondir leurs examens paracliniques et leur administre des traitements qui ne peuvent être prodigués en ambulatoire.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-7"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">La maternité  et accouchement</h3>
-                        </div>
-                        <div id="collapse-7" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Ici, on admet des parturientes et des suites de couches, cependant des femmes enceintes dont l’état est jugé préoccupant sont également hospitalisés pour un meilleur suivi.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-8"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Le service de Planning Familial</h3>
-                        </div>
-                        <div id="collapse-8" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Les femmes qui désirent espacer les naissances ou obtenir plus d’informations pour les maternités futures y sont conduites. Il leur est délivré des conseils et des intrants pour l’espacement des naissances et la maternité responsable. </p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-9"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">la consultation prénatale </h3>
-                        </div>
-                        <div id="collapse-9" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Ces consultations prénatales ont pour objectif de suivre la santé de la mère et du bébé pendant toute la grossesse, d'informer les parents sur le déroulement de la grossesse et de détecter une éventuelle complication au plus tôt.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-10"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">le service de vaccination</h3>
-                        </div>
-                        <div id="collapse-10" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">C’est le lieu où les antigènes du programme élargi de vaccination sont administrés aux enfants éligibles selon la politique nationale dans le domaine. Le personnel en service à ce niveau assure également la gestion de la courbe de croissance de la petite patientèle. </p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-12"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">L’Imagerie médicale</h3>
-                        </div>
-                        <div id="collapse-12" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Service phare dans la prise en charge des traumatisés de la voie publique.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-13"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Service ORL et Chirurgie maxillo-faciale </h3>
-                        </div>
-                        <div id="collapse-13" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">C’est l’unité qui s’occupe des pathologies du nez, des sinus de la gorge et des oreilles. </p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-14"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Service d’Ophtalmologie  </h3>
-                        </div>
-                        <div id="collapse-14" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Cette unité spécialisée prend en charge les maladies des yeux et de ses annexes. </p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-15"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Le service de comptabilité matière  </h3>
-                        </div>
-                        <div id="collapse-15" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Il centralise les entrées et sortie du matériel, conseille sur les commandes à venir et est le garant du patrimoine de l’hôpital.  </p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-16"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">La régie des recettes </h3>
-                        </div>
-                        <div id="collapse-16" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Elle collecte, centralise et sécurise les fonds issus des recettes de l’hôpital. Mets à disposition des prestataires les quottes part qui leur sont dues. Le régisseur de recette est aidé par un économe.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-17"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Une unité Hygiène et assainissement</h3>
-                        </div>
-                        <div id="collapse-17" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Cette mini structure assure l’hygiène et la salubrité à l’hôpital et dans ses alentours. Elle identifie et prévient les situations d’insalubrité. Le manque de matériel de travail rend difficile cette tâche. </p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-18"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">Le service de la Pharmacie </h3>
-                        </div>
-                        <div id="collapse-18" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Il commande, stocke, distribue les médicaments essentiels à des prix accessible. Cette pharmacie est sous tutelle du fond régional de promotion de la santé pour le Centre.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                      <div class="panel">
-                        <div class="panel-heading"> <a class="btn-collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse-19"><i class="icon fa"></i></a>
-                          <h3 class="panel-title">le Bloc opératoire</h3>
-                        </div>
-                        <div id="collapse-19" class="panel-collapse collapse">
-                          <div class="panel-body"> <img src="media/120x125/1.jpg" height="125" width="120" alt="Foto">
-                            <p class="ui-text">Il assure les actes de chirurgie, de gynécologie et d’obstétrique.</p>
-                            <a href="javascript:void(0);" class="link">APPRENDRE ENCORE PLUS</a> </div>
-                        </div>
-                      </div>
-                    </div>
+              <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="title">Care Healthy</h4>
+                    <p>Care and recuperation</p>
+                  </div>
+                  <span class="icon icofont-paralysis-disability"></span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </div>
-  <!-- end section -->
-  
-  
-  <ul class="bxslider slider_gallery"
-      data-max-slides="7"
-      data-min-slides="3"
-      data-width-slides="400"
-      data-margin-slides="0"
-      data-auto-slides="true"
-      data-move-slides="1"
-      data-infinite-slides="true"
-      data-pager="false" >
-    <li class="slide"><a href="media/carusel/fullscreen/1.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/1.jpg" height="350" width="400"></a></li>
-    <li class="slide"><a href="media/carusel/fullscreen/2.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/2.jpg" height="350" width="400"></a></li>
-    <li class="slide"><a href="media/carusel/fullscreen/3.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/3.jpg" height="350" width="400"></a></li>
-    <li class="slide"><a href="media/carusel/fullscreen/4.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/4.jpg" height="350" width="400"></a></li>
-    <li class="slide"><a href="media/carusel/fullscreen/1.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/1.jpg" height="350" width="400"></a></li>
-    <li class="slide"><a href="media/carusel/fullscreen/2.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/2.jpg" height="350" width="400"></a></li>
-    <li class="slide"><a href="media/carusel/fullscreen/3.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/3.jpg" height="350" width="400"></a></li>
-    <li class="slide"><a href="media/carusel/fullscreen/4.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/4.jpg" height="350" width="400"></a></li>
-  </ul>
-  <!-- end slider_gallery -->
+        </section>
+        <!-- static media end -->
 
- <div id="obtain_an_appointment" class="container" style="margin-bottom: 10px;">
-   <div class="row">
-    <h2 class="ui-title-block text-center ui-title-block_small">Bénéficier <span> de nos soins</span></h2>  
-    <div    class="col-12 col-sm-6">
-      <i class="decor-brand decor-brand_footer"></i>
-      <form class="form-appointment ui-form">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-1">
-            <div class="input-group">
-              <input type="text" placeholder="First Name">
+        <!--== Start Feature Area Wrapper ==-->
+        <section class="feature-section" data-bg-color="#fff">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="section-title"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  <p>Why Choose hope Medical</p>
+                  <h2 class="title"><span>The Best</span> For Your Health</h2>
+                </div>
+              </div>
             </div>
-            <div class="input-group">
-              <input type="email" placeholder="Email Address">
-            </div>
-            <div class="input-group">
-              <input class="datetimepicker" type="text" placeholder="Date Of Birth">
-              <i class="icon icon-calendar"></i>
-            </div>
-            <div class="input-group">
-              <input class="datetimepicker" type="text" placeholder="Preferred Appointment Date">
-              <i class="icon icon-calendar"></i>
+            <div class="row">
+              <div class="col-lg-12 col-xl-8">
+                <div
+                  class="row icon-box-style"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  <div class="col-md-6">
+                    <div class="icon-box-item">
+                      <div class="icon">
+                        <i class="icofont-prescription"></i>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Medical Counseling</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consect adipisicing elit
+                          vero. Donec ultri sollicitudin lacus
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="icon-box-item">
+                      <div class="icon">
+                        <i class="icofont-doctor-alt"></i>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Top Level Doctors</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consect adipisicing elit
+                          vero. Donec ultri sollicitudin lacus
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="icon-box-item">
+                      <div class="icon">
+                        <i class="icofont-microscope"></i>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Medical Facilites</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consect adipisicing elit
+                          vero. Donec ultri sollicitudin lacus
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="icon-box-item">
+                      <div class="icon">
+                        <i class="icofont-ambulance-cross"></i>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">24 Hours Services</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consect adipisicing elit
+                          vero. Donec ultri sollicitudin lacus
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="icon-box-item">
+                      <div class="icon">
+                        <i class="icofont-blood"></i>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Personal Services</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consect adipisicing elit
+                          vero. Donec ultri sollicitudin lacus
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="icon-box-item">
+                      <div class="icon">
+                        <i class="icofont-paralysis-disability"></i>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Dedicated Patient Care</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consect adipisicing elit
+                          vero. Donec ultri sollicitudin lacus
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="input-group">
-              <input type="text" placeholder="Last Name">
-            </div>
-            <div class="input-group">
-              <input type="tel" placeholder="Phone #">
-            </div>
-            <div role="select" class="jelect">
-              <input id="jelect" name="tool" value="0" data-text="imagemin" type="text" class="jelect-input">
-              <div tabindex="0" role="button" class="jelect-current">Select Your Department</div>
-              <ul class="jelect-options">
-                <li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Department 1</li>
-                <li data-val='1' tabindex="0" role="option" class="jelect-option">Department 2</li>
-                <li data-val='2' tabindex="0" role="option" class="jelect-option">Department 3</li>
-              </ul>
-            </div>
-            <div role="select" class="jelect">
-              <input id="jelect" name="tool" value="0" data-text="imagemin" type="text" class="jelect-input">
-              <div tabindex="0" role="button" class="jelect-current">Select your Gender</div>
-              <ul class="jelect-options">
-                <li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Male</li>
-                <li data-val='1' tabindex="0" role="option" class="jelect-option">Female</li>
-              </ul>
-            </div>
+          <div class="thumb" data-aos="fade-left" data-aos-duration="1500">
+            <img src="assets/img/photos/doctor-01.png" alt="hope-Image" />
           </div>
-        </div><!-- end row -->
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="input-group">
-              <input type="text" placeholder="Subject  /  Brief Description">
-            </div>
-            <div class="input-group">
-              <textarea id="comment-text" placeholder="Type your Message Details" name="comment" required rows="10"></textarea>
-            </div>
-            <button class="btn bg-color_primary">BOOK APPOINTMENT <span class="btn-plus">+</span></button>
-          </div>
-        </div><!-- end row -->
-      </form>
-    </div><!-- end row -->
-    <div class="col-12 col-md-6">
-<section class="consutation_hours">
-  <h3 class="text-center"><i class="decor-brand decor-brand_footer"></i>Programme  De Consultation</h3>
-  <table style='border-top: 1px solid rgba(128, 128, 128, 0.463); border-bottom: 1px solid rgba(128, 128, 128, 0.463)' class="footer__table">
-    <thead>
-      <strong>
-        <th style='font-weight: bold'>SPECIALITE</th>
-      </strong>
-      <th style='font-weight: bold'>MEDECIN</th>
-      <th style='font-weight: bold'>JOURS DE CONSULTATION</th>
-      <th style='font-weight: bold'>HORRAIRES</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Rhumatologie</td>
-        <td>
-          <p>Dr ELOUNDOU</p>
-          <p> Dr SUZY</p>
-        </td>
-        <td>
-          <p>Mercredi</p>
-          <p>Lundi - Vendredi</p>
-        </td>
-        <td>
-          8h00 – 15h30
-        </td>
-      </tr>
-      <tr>
-        <td>Cardiologie</td>
-        <td>
-          <p>Dr SEDE</p>
-          <p>Dr ABOUBAKAR</p>
-          <p>Dr ZE</p>
-        </td>
-        <td>
-          <p>Lundi – Mardi</p>
-          <p>Mercredi – Jeudi</p>
-          <p>Vendredi</p>
-        </td>
-        <td>
-          8h00 – 15h30
-        </td>
-      </tr>
-      <tr>
-        <td>Chirurgie Général</td>
-        <td>
-          <p>Dr BIONGOLO</p>
-          <p>Dr BUKAM</p>
-        </td>
-        <td>
-          <p>Lundi – Jeudi</p>
-          <p>Mardi – Vendredi</p>
-        </td>
-        <td>
-          8h00 – 15h30
-        </td>
-      </tr>
-      <tr>
-        <td>Chirurgie Orthopédique & Traumatologie/td>
-        <td>
-          <p>Dr FOSSOH</p>
-        </td>
-        <td>
-          <p>Mercredi - Vendredi</p>
-        </td>
-        <td>
-          8h00 – 15h30
-        </td>
-      </tr>
-      <tr>
-        <td>Gynéco-Obstétrique</td>
-        <td>
-          <p>Dr BOORO</p>
-          <p>Dr VERBE</p>
-        </td>
-        <td>
-          <p>Lundi - Vendredi</p>
-          <p>Lundi – Vendredi</p>
-        </td>
-        <td>
-          8h00 – 15h30
-        </td>
-      </tr>
-      <tr>
-        <td>Endocrinologie</td>
-        <td>
-          <p>Dr NTOUYOUM</p>
-          <p>Dr BINOLE</p>
-        </td>
-        <td>
-          <p>Lundi – Mardi – Mercredi – Vendredi</p>
-          <p>Mardi - Jeudi</p>
-        </td>
-        <td>
-          8h00 – 15h30
-        </td>
-      </tr>
-      <tr>
-        <td>Pédiatre</td>
-        <td>
-          <p>Dr KOTCHOLI</p>
-        </td>
-        <td>
-          <p>Lundi – Mardi – Mercredi – Vendredi</p>
-        </td>
-        <td>
-          8h00 – 15h30
-        </td>
-      </tr>
-      <tr>
-        <td>Stomatologie</td>
-        <td>
-          <p>Dr NOKAM</p>
-          <p>Dr TEZANOU</p>
-          <p>Dr MEKONGO</p>
-          <p>Dr JUPKWO</p>
-          <p>Dr ELIMBI</p> 
-        </td>
-        <td>
-          <p>Lundi</p>
-          <p>Mardi</p>
-          <p>Mercredi</p>
-          <p>Jeudi</p>
-          <p>Vendredi</p>
-        </td>
-        <td>
-          8h00 – 15h30
-        </td>
-      </tr>
-     
-    </tbody>
-  </table>
-</section>
-      <!-- <ul class="list-mark list-mark_big">
-        <li><a class="icon icon-login" href="javascript:void(0);">Eye Care Solutions</a></li>
-        <li><a class="icon icon-login" href="javascript:void(0);">Dental Surgery</a></li>
-        <li><a class="icon icon-login" href="javascript:void(0);">Blood Tests And X-Rays</a></li>
-        <li><a class="icon icon-login" href="javascript:void(0);">Health Care Problems</a></li>
-        <li><a class="icon icon-login" href="javascript:void(0);">Medicies And Drug Store</a></li>
-        <li><a class="icon icon-login" href="javascript:void(0);">General Prescriptions</a></li>
-        <li><a class="icon icon-login" href="javascript:void(0);">Pregnancy and Births</a></li>
-      </ul> -->
-    </div>
-   </div>
- </div>
- <div class="banner bg bg_3 bg_transparent wow zoomIn" data-wow-delay="1s">
-  <div class="container"> 
-  
-    <div class="row">
-      <div class="col-xs-12">
-        <ul class="list-progress">
-          <li> <span class="icon-round icon-round_small bg-color_second helper"><i class="icon fa fa-user-md"></i></span>
-            <div class="info"> <span class="chart" data-percent="126"> <span class="percent"></span> </span> <span class="label-chart">Hospital Rooms</span> </div>
-          </li>
-          <li> <span class="icon-round icon-round_small bg-color_second helper"><i class="icon fa fa-hospital-o"></i></span>
-            <div class="info"> <span class="chart" data-percent="510"> <span class="percent"></span> </span> <span class="label-chart">Qualified Staff</span> </div>
-          </li>
-          <li> <span class="icon-round icon-round_small bg-color_second helper"><i class="icon fa fa-heartbeat"></i></span>
-            <div class="info"> <span class="chart" data-percent="6200"> <span class="percent"></span> </span> <span class="label-chart">Satisfied Patients</span> </div>
-          </li>
-          <li> <span class="icon-round icon-round_small bg-color_second helper"><i class="icon fa fa-shield"></i></span>
-            <div class="info"> <span class="chart" data-percent="513"> <span class="percent"></span> </span> <span class="label-chart">Doctors Medals</span> </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        </section>
+        <!--== End Feature Area Wrapper ==-->
 
-  <section class="section bg bg_5 bg_transparent">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 color_white wow bounceInleft">
-          <h2 class="ui-title-block color_white font-weight_700">Ce que nous vous offrons</h2>
-            <i class="decor-brand decor-brand_footer"></i>
-          <div class="subtitle_mod-1">Des installations de santé uniques et des avantages à HDCV</div>
-          <ul>
-            <li> <p class="ui-text color_white"> Soins intensifs </p></li>
-            <li><p class="ui-text color_white"> 24/7 ambulance </p></li>
-            <li><p class="ui-text color_white"> Docteur amicale </p></li>
-          </ul>
-          <!-- <a class="btn btn_transparent" href="javascript:void(0);">WATCH THE VIDEO</a> --></div> 
-        <div class="col-md-5 col-md-offset-1"> <a class="link_on-youtube wow bounceInRight" href="https://www.youtube.com/watch?v=NnuaHGW1cwU&rel=0" rel="prettyPhoto" title="YouTube"><i class="icon_video-player icon-camcorder bg-color_primary"></i><img src="media/450x270/1.jpg" height="270" width="450" alt="Link on youtube"></a> </div>
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </section>
- <!-- <section>
-   <div class="container-fluid">
-     <div class="row">
-      <h2 class="ui-title-block text-center ui-title-block_small">Nos <span>Partenaires</span></h2>
-       <div class="col-12">
-        <ul class="bxslider "
-        data-max-slides="7"
-        data-min-slides="3"
-        data-width-slides="400"
-        data-margin-slides="0"
-        data-auto-slides="true"
-        data-move-slides="1"
-        data-infinite-slides="true"
-        data-pager="false" >
-      <li class="slide"><a href="media/carusel/fullscreen/1.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/1.jpg" height="350" width="400"></a></li>
-      <li class="slide"><a href="media/carusel/fullscreen/2.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/2.jpg" height="350" width="400"></a></li>
-      <li class="slide"><a href="media/carusel/fullscreen/3.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/3.jpg" height="350" width="400"></a></li>
-      <li class="slide"><a href="media/carusel/fullscreen/4.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/4.jpg" height="350" width="400"></a></li>
-      <li class="slide"><a href="media/carusel/fullscreen/1.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/1.jpg" height="350" width="400"></a></li>
-      <li class="slide"><a href="media/carusel/fullscreen/2.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/2.jpg" height="350" width="400"></a></li>
-      <li class="slide"><a href="media/carusel/fullscreen/3.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/3.jpg" height="350" width="400"></a></li>
-      <li class="slide"><a href="media/carusel/fullscreen/4.jpg" rel="prettyPhoto[gallery1]"><span class="slide_bg"></span><img src="media/carusel/thumbnails/4.jpg" height="350" width="400"></a></li>
-    </ul>
-       </div>
-     </div>
-   </div>
- </section> -->
-  
-  <!-- end banner -->
-  
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="container">
-        <div class="footer__block clearfix">
-          <div class="block__wrap pull-left">
-            <p class="block__title"><i class="block__icon icon-note"></i>Besoin d'un médecin pour un contrôle ?</p>
-            <p class="block__text">PRENDRE RENDEZ-VOUS ET VOUS AVEZ FINI !</p>
-          </div>
-          <a class="block__btn btn bg-color_second pull-right" href="#obtain_an_appointment">OBTENIR UN RENDEZ-VOUS <span class="btn-plus">+</span></a> </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <section class="footer__section">
-              <h2 class="footer__title">About HealthCare Agency</h2>
-              <i class="decor-brand decor-brand_footer"></i>
-              <p>L’hôpital de District de la Cité Verte (HDCV) Crée en 1986, établissement médical de 4ème catégorie couvre une population de plus de 400.000 habitants.
-               Situé en plein cœur du camp SIC, arrondissement de Yaoundé II, département du Mfoundi, région du Centre. Transformé en Centre Médical d’arrondissement en 1988, et enfin en Hôpital de District en 1995 à la suite de la réorganisation du Ministère de la Santé Publique.
-                </p>
-              <address class="footer__contacts">
-              <i class="footer__icon icon-pointer color_primary"></i>Cameroun-Yaoundé, Cité Verte
-              </address>
-              <p class="footer__contacts"><i class="footer__icon icon-call-in color_primary"></i>+237 622-22-87-34 | +237 622-22-12-73</p>
-              <p class="footer__contacts"><i class="footer__icon icon-envelope-open color_primary"></i>Contact.hdcv@gmail.com</p>
-              <p class="footer__contacts"><i class="footer__icon icon-envelope-open color_primary"></i>B.P 3604 Messa-Yaoundé. </p>
-            </section>
-
-          </div>
-          <section class="footer__section col-sm-4">
-            <h2 class="footer__title">Lien Utiles</h2>
-            <section >
+        <!--== Start Appointment Form Area Wrapper ==-->
+        <section class="appointment-area" data-bg-color="#f3f3f3">
+          <div class="appointment-form-style1">
+            <div class="container">
               <div class="row">
-                <div class="col-12 col-md-6">
-                  <ul style="list-style: none;">
-                    <li><a href="./index.html">ACCUEIL</a></li>
-                    <li><a href="./about.html">À PROPOS</a></li>
-                    <li><a href="javascript:void(0);">SERVICES</a></li>
-                    <li><a href="javascript:void(0);">PAGES</a></li>
-                  </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                  <ul style="list-style: none;">
-                    <li><a href="javascript:void(0);">GALERIE</a></li>
-                    <li><a href="javascript:void(0);">BLOG</a></li>
-                    <li><a href="javascript:void(0);">ACHETER</a></li>
-                    <li><a href="javascript:void(0);">CONTACT</a></li>
-                  </ul>
+                <div class="col-12">
+                  <div class="appointment-form">
+                    <div class="section-title">
+                      <p>We Alway Ready Helps you</p>
+                      <h2 class="title"><span>Book An</span> Appointment</h2>
+                    </div>
+                    <form
+                      id="contact-form"
+                      action="http://whizthemes.com/mail-php/raju/arden/mail.php"
+                      method="post"
+                    >
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              name="con_name"
+                              placeholder="Enter your name..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="email"
+                              name="con_email"
+                              placeholder="sample@gmail.com"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              name="con_phone"
+                              placeholder="Phone"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group datepicker-group">
+                            <label
+                              for="datepicker"
+                              class="form-label icon icofont-calendar"
+                            ></label>
+                            <input
+                              class="form-control"
+                              id="datepicker"
+                              type="text"
+                              name="con_date"
+                              placeholder="Date"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group mb-0">
+                            <textarea
+                              name="con_message"
+                              rows="7"
+                              placeholder="Your message here..."
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group mb-0">
+                            <button class="btn btn-theme" type="submit">
+                              Make an appointment
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Message Notification -->
+                  <div class="form-message"></div>
                 </div>
               </div>
-              <span class="tweets__time">3 hours ago</span> </section>
-              <section class="footer__section">
-                <h2 class="footer__title">Heures d'ouverture</h2>
-                <i class="decor-brand decor-brand_footer"></i>
-                <table class="footer__table">
-                  <tbody>
-                    <tr>
-                      <td>Lundi - Vendredi</td>
-                      <td>08h00 - 22h00</td>
-                    </tr>
-                    <tr>
-                      <td>Samedi - Dimanche</td>
-                      <td>09h00 - 18h00</td>
-                    </tr>
-                    <tr>
-                      <td>Services d'urgence</td>
-                      <td>Ouvert 24h/24</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </section>
-          </section>
-          <section class="footer__section col-sm-4">
-            <h2 class="footer__title">Formulaire de contact</h2>
-            <i class="decor-brand decor-brand_footer"></i>
-            <form class="form" role="form">
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Nom complet">
-                <input class="form-control" type="email" placeholder="Adresse e-mail">
-                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-                <input class="btn bg-color_primary pull-right" type="submit" value="ENVOYER MAINTENANT">
+            </div>
+          </div>
+        </section>
+        <!--== End Appointment Form Area Wrapper ==-->
+
+        <!--== Start Team Area Wrapper ==-->
+        <section class="team-area team-default-area" data-bg-color="#f3f3f3">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="section-title text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <p>Meet Our Docots</p>
+                  <h2 class="title">
+                    <span>Professional &</span> Enthusiastic
+                  </h2>
+                </div>
               </div>
-            </form>
-          </section>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="swiper-container team-slider-container"
+                  data-aos="fade-up"
+                  data-aos-duration="1300"
+                >
+                  <div class="swiper-wrapper team-slider">
+                    <!--== Start Team Item ==-->
+                    <div class="swiper-slide team-member">
+                      <div class="thumb">
+                        <img src="assets/img/team/01.jpg" alt="hope-HasTech" />
+                      </div>
+                      <div class="content">
+                        <div class="member-info">
+                          <h4 class="name">Dr. Helen Willmore</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed ut sapi euismod, auctor orci ut.
+                          </p>
+                          <a href="#/" class="btn-link">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--== End Team Item ==-->
+
+                    <!--== Start Team Item ==-->
+                    <div class="swiper-slide team-member">
+                      <div class="thumb">
+                        <img src="assets/img/team/02.jpg" alt="hope-HasTech" />
+                      </div>
+                      <div class="content">
+                        <div class="member-info">
+                          <h4 class="name">Dr. Robert David</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed ut sapi euismod, auctor orci ut.
+                          </p>
+                          <a href="#/" class="btn-link">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--== End Team Item ==-->
+
+                    <!--== Start Team Item ==-->
+                    <div class="swiper-slide team-member">
+                      <div class="thumb">
+                        <img src="assets/img/team/03.jpg" alt="hope-HasTech" />
+                      </div>
+                      <div class="content">
+                        <div class="member-info">
+                          <h4 class="name">Dr. Kristina Castle</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed ut sapi euismod, auctor orci ut.
+                          </p>
+                          <a href="#/" class="btn-link">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--== End Team Item ==-->
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--== End Team Area Wrapper ==-->
+
+        <!--== Start Testimonial Area Wrapper ==-->
+        <section
+          class="testimonial-area testimonial-default-area bg-img"
+          data-bg-img="assets/img/photos/testimonial-bg1.jpg"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="section-title text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <p>Testimonial</p>
+                  <h2 class="title"><span>Trusted</span> From Clients</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="swiper-container testimonial-slider-container"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  <div class="swiper-wrapper testimonial-slider">
+                    <!--== Start Testimonial Item ==-->
+                    <div class="swiper-slide testimonial-item">
+                      <div class="thumb">
+                        <img src="assets/img/testimonial/01.jpg" alt="Image" />
+                      </div>
+                      <div class="client-content">
+                        <p>
+                          “It’s been an absolute pleasure to work with hope,
+                          <br />their response to our brief exceeded
+                          expectations and the execution was efficient,
+                          professional and very reassuring. I’d fully recommend
+                          theme.”
+                        </p>
+                      </div>
+                      <div class="client-info">
+                        <div class="desc">
+                          <h4 class="name">Steven Gerrard</h4>
+                          <p class="client-location">
+                            Golden Lotus Apartment, Brooklyn, USA
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--== End Testimonial Item ==-->
+                    <!--== Start Testimonial Item ==-->
+                    <div class="swiper-slide testimonial-item">
+                      <div class="thumb">
+                        <img src="assets/img/testimonial/02.jpg" alt="Image" />
+                      </div>
+                      <div class="client-content">
+                        <p>
+                          “It’s been an absolute pleasure to work with hope,
+                          <br />their response to our brief exceeded
+                          expectations and the execution was efficient,
+                          professional and very reassuring. I’d fully recommend
+                          theme.”
+                        </p>
+                      </div>
+                      <div class="client-info">
+                        <div class="desc">
+                          <h4 class="name">Kristina Castle</h4>
+                          <p class="client-location">
+                            Golden Lotus Apartment, HasTech, BNA
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--== End Testimonial Item ==-->
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="brand-logo-area brand-logo-default-area">
+                  <div
+                    class="swiper-container brand-logo-slider-container"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                  >
+                    <div class="swiper-wrapper brand-logo-slider">
+                      <div class="swiper-slide brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="assets/img/brand-logo/01.png"
+                            alt="hope-Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="swiper-slide brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="assets/img/brand-logo/02.png"
+                            alt="hope-Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="swiper-slide brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="assets/img/brand-logo/03.png"
+                            alt="hope-Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="swiper-slide brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="assets/img/brand-logo/04.png"
+                            alt="hope-Brand-Logo"
+                        /></a>
+                      </div>
+                      <div class="swiper-slide brand-logo-item">
+                        <a href="#/"
+                          ><img
+                            src="assets/img/brand-logo/05.png"
+                            alt="hope-Brand-Logo"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--== End Testimonial Area Wrapper ==-->
+
+        <!--== Start Pricing Area Wrapper ==-->
+        <section class="pricing-area pricing-default-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="section-title text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <p>Pricing List</p>
+                  <h2 class="title">
+                    <span>Protect</span> With Health Care Card
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row row-gutter-0 pricing-items-style1"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+            >
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="pricing-item item-one">
+                  <div class="pricing-title">
+                    <h5>Trial</h5>
+                  </div>
+                  <div class="pricing-amount">
+                    <h2><sup>$</sup>5</h2>
+                    <span class="period">/ month</span>
+                  </div>
+                  <div class="pricing-content">
+                    <p class="desc">
+                      Free with 14 days trial, then you can choose plan
+                    </p>
+                    <ul class="pricing-list">
+                      <li><i class="icofont-check-circled"></i> 1 Cleaner</li>
+                      <li>
+                        <i class="icofont-check-circled"></i> Floor Cleaning
+                      </li>
+                      <li><i class="icofont-check-circled"></i> 2 Rooms</li>
+                    </ul>
+                  </div>
+                  <div class="pricing-footer">
+                    <a class="btn-theme btn-border" href="#/"
+                      >Get Started Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="pricing-item item-two">
+                  <div class="pricing-title">
+                    <h5>Standard</h5>
+                  </div>
+                  <div class="pricing-amount">
+                    <h2><sup>$</sup>29</h2>
+                    <span class="period">/ month</span>
+                  </div>
+                  <div class="pricing-content">
+                    <p class="desc">
+                      Free with 14 days trial, then you can choose plan
+                    </p>
+                    <ul class="pricing-list">
+                      <li><i class="icofont-check-circled"></i> 3 Cleaners</li>
+                      <li>
+                        <i class="icofont-check-circled"></i> All House Cleaning
+                      </li>
+                      <li><i class="icofont-check-circled"></i> All Rooms</li>
+                      <li>
+                        <i class="icofont-check-circled"></i> Equipment Cleaning
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pricing-footer">
+                    <a class="btn-theme btn-border active" href="#/"
+                      >Get Started Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="pricing-item item-three">
+                  <div class="pricing-title">
+                    <h5>premium</h5>
+                  </div>
+                  <div class="pricing-amount">
+                    <h2><sup>$</sup>59</h2>
+                    <span class="period">/ month</span>
+                  </div>
+                  <div class="pricing-content">
+                    <p class="desc">
+                      Free with 14 days trial, then you can choose plan
+                    </p>
+                    <ul class="pricing-list">
+                      <li><i class="icofont-check-circled"></i> 2 Cleaners</li>
+                      <li>
+                        <i class="icofont-check-circled"></i> Normal Clean
+                      </li>
+                      <li><i class="icofont-check-circled"></i> 3 Rooms</li>
+                    </ul>
+                  </div>
+                  <div class="pricing-footer">
+                    <a class="btn-theme btn-border" href="#/"
+                      >Get Started Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="pricing-item item-four">
+                  <div class="pricing-title">
+                    <h5>Ultimate</h5>
+                  </div>
+                  <div class="pricing-amount">
+                    <h2><sup>$</sup>99</h2>
+                    <span class="period">/ month</span>
+                  </div>
+                  <div class="pricing-content">
+                    <p class="desc">
+                      Free with 14 days trial, then you can choose plan
+                    </p>
+                    <ul class="pricing-list">
+                      <li><i class="icofont-check-circled"></i> 5 Cleaners</li>
+                      <li>
+                        <i class="icofont-check-circled"></i> All Office
+                        Cleaning
+                      </li>
+                      <li><i class="icofont-check-circled"></i> All Rooms</li>
+                      <li>
+                        <i class="icofont-check-circled"></i> Equipments
+                        Cleaning
+                      </li>
+                      <li>
+                        <i class="icofont-check-circled"></i> Exterior Glasses
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pricing-footer">
+                    <a class="btn-theme btn-border" href="#/"
+                      >Get Started Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--== End Pricing Area Wrapper ==-->
+
+        <!--== Start Blog Area Wrapper ==-->
+        <section class="blog-area blog-default-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div
+                  class="section-title"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <h2 class="title"><span>Tips &</span> Tricks</h2>
+                </div>
+                <div
+                  class="post-items-style1"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  <!--== Start Blog Post Item ==-->
+                  <div class="post-item">
+                    <div class="thumb">
+                      <a href="blog-details.html"
+                        ><img src="assets/img/blog/01.jpg" alt="hope-Blog"
+                      /></a>
+                    </div>
+                    <div class="content">
+                      <h4 class="title">
+                        <a href="blog-details.html"
+                          >How to cleaning exterior glasses secure & bright?</a
+                        >
+                      </h4>
+                      <div class="meta">
+                        Sep 17th, 2020 by
+                        <a class="author" href="blog.html">Admin</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--== End Blog Post Item ==-->
+
+                  <!--== Start Blog Post Item ==-->
+                  <div class="post-item">
+                    <div class="thumb">
+                      <a href="blog-details.html"
+                        ><img src="assets/img/blog/02.jpg" alt="hope-Blog"
+                      /></a>
+                    </div>
+                    <div class="content">
+                      <h4 class="title">
+                        <a href="blog-details.html"
+                          >Your building look alway modern and shiny more with
+                          Clenora</a
+                        >
+                      </h4>
+                      <div class="meta">
+                        Sep 17th, 2020 by
+                        <a class="author" href="blog.html">Admin</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--== End Blog Post Item ==-->
+
+                  <!--== Start Blog Post Item ==-->
+                  <div class="post-item">
+                    <div class="thumb">
+                      <a href="blog-details.html"
+                        ><img src="assets/img/blog/03.jpg" alt="hope-Blog"
+                      /></a>
+                    </div>
+                    <div class="content">
+                      <h4 class="title">
+                        <a href="blog-details.html"
+                          >Notes when vacuuming in <br />the house</a
+                        >
+                      </h4>
+                      <div class="meta">
+                        Sep 17th, 2020 by
+                        <a class="author" href="blog.html">Admin</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--== End Blog Post Item ==-->
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="section-title mt-md-70"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <h2 class="title"><span>FAQs</span></h2>
+                </div>
+                <div
+                  class="accordian-content"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  <div
+                    class="accordion accordion-style2 no-bg"
+                    id="accordionStyle"
+                  >
+                    <div class="accordion-item">
+                      <div class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Can I Get A Divorce Without A Consultant?
+                          <i class="icon icon-plus icofont-thin-down"></i>
+                          <i class="icon icon-minus icofont-close-line"></i>
+                        </button>
+                      </div>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionStyle"
+                      >
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Curabitur consectetur elit lacinia ornare. In
+                          volutpat rutrum molestie. Vivamus efficitur orci, ac
+                          gravida eros bibendum non. Nullam auctor varius fer
+                          vestibulum ante ipsum primis in faucibus orci luctus
+                          et ultrices.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          I Have A Technical Problem Or Support Issue I Need
+                          Resolved, Who Do I Email?
+                          <i class="icon icon-plus icofont-thin-down"></i>
+                          <i class="icon icon-minus icofont-close-line"></i>
+                        </button>
+                      </div>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionStyle"
+                      >
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Curabitur consectetur elit lacinia ornare. In
+                          volutpat rutrum molestie. Vivamus efficitur orci, ac
+                          gravida eros bibendum non. Nullam auctor varius fer
+                          vestibulum ante ipsum primis in faucibus orci luctus
+                          et ultrices.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          What Other Services Are You Compatible With?
+                          <i class="icon icon-plus icofont-thin-down"></i>
+                          <i class="icon icon-minus icofont-close-line"></i>
+                        </button>
+                      </div>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionStyle"
+                      >
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Curabitur consectetur elit lacinia ornare. In
+                          volutpat rutrum molestie. Vivamus efficitur orci, ac
+                          gravida eros bibendum non. Nullam auctor varius fer
+                          vestibulum ante ipsum primis in faucibus orci luctus
+                          et ultrices.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header" id="headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          Are You Hiring?
+                          <i class="icon icon-plus icofont-thin-down"></i>
+                          <i class="icon icon-minus icofont-close-line"></i>
+                        </button>
+                      </div>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionStyle"
+                      >
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Curabitur consectetur elit lacinia ornare. In
+                          volutpat rutrum molestie. Vivamus efficitur orci, ac
+                          gravida eros bibendum non. Nullam auctor varius fer
+                          vestibulum ante ipsum primis in faucibus orci luctus
+                          et ultrices.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="btn-line" href="#/">View All Questions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--== End Blog Area Wrapper ==-->
+
+        <!--== Start Map Area Wrapper ==-->
+        <div class="map-area">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8402891185374!2d144.95373631590425!3d-37.81720974201477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2ssg!4v1607294780661!5m2!1sen!2ssg"
+          ></iframe>
         </div>
-        <!-- end row --> 
-      </div>
-      <!-- end container --> 
-    </div>
-    <!-- end footer__inner -->
-    
-    <div class="footer__menu clearfix">
-      <div class="container"> <a href="index.html" class="logo pull-left"> <img class="logo__img" src="img/logo.png" height="50" width="50" alt="Logo"> </a>
-        <div class=" pull-right footer__bottom"> 
-          <span style="color: aliceblue;" class=" copyright">© Copyrights HDCV 2021 | powered by Mercury-Tech</span>
-          <ul class="social-links">
-            <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
-            <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
-            <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
-            <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
-            <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
+        <!--== End Map Area Wrapper ==-->
+      </main>
+
+      <!--== Start Footer Area Wrapper ==-->
+      <footer class="footer-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="widget-item">
+                <div class="about-widget">
+                  <a class="footer-logo" href="index.html">
+                    <img src="assets/img/logo-dark.png" alt="Logo" />
+                  </a>
+                  <p class="mb-0">
+                    Sed elit quam, iaculis sed semper sit amet udin vitae nibh
+                    at magna akal semperFusce.
+                  </p>
+                  <ul class="widget-contact-info">
+                    <li class="info-address">
+                      <i class="icofont-location-pin"></i>69 Halsey St, New
+                      York, Ny 10002, United States.
+                    </li>
+                    <li class="info-mail">
+                      <i class="icofont-email"></i
+                      ><a href="mailto://hello@yourdomain.com"
+                        >hello@yourdomain.com</a
+                      >
+                    </li>
+                    <li class="info-phone">
+                      <i class="icofont-ui-call"></i
+                      ><a href="tel://(0091)8547632521">(0091) 8547 632521</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-6 offset-md-1 col-lg-3 offset-lg-0 col-xl-3 d-lg-none d-xl-block"
+            >
+              <div class="widget-item d-inline-block">
+                <h4 class="widget-title line-bottom">Popular Tags</h4>
+                <div class="widget-tags">
+                  <ul>
+                    <li><a href="#/">Amazing</a></li>
+                    <li><a href="#/">Envato</a></li>
+                    <li><a href="#/">Themes</a></li>
+                    <li><a href="#/">Clean</a></li>
+                    <li><a href="#/">Wordpress</a></li>
+                    <li><a href="#/">Creative</a></li>
+                    <li><a href="#/">Mutilpurpose</a></li>
+                    <li><a href="#/">Retina Ready</a></li>
+                    <li><a href="#/">Twitter</a></li>
+                    <li><a href="#/">Responsive</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <div class="widget-item">
+                <h4 class="widget-title line-bottom">Recent Posts</h4>
+                <nav class="widget-posts">
+                  <ul class="posts-item">
+                    <li>
+                      <a href="blog-details.html"
+                        ><i class="icon icofont-rounded-double-right"></i>Lorem
+                        Ispum dolor sit amet putilor</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog-details.html"
+                        ><i class="icon icofont-rounded-double-right"></i
+                        >Medical is all about quality.</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog-details.html"
+                        ><i class="icon icofont-rounded-double-right"></i>Is
+                        your website user friendly ?</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog-details.html"
+                        ><i class="icon icofont-rounded-double-right"></i>Ai
+                        offer weekly updates & more.</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog-details.html"
+                        ><i class="icon icofont-rounded-double-right"></i
+                        >Customer should love your web.</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog-details.html"
+                        ><i class="icon icofont-rounded-double-right"></i>Your
+                        site smooth and stunning.</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-6 offset-md-1 col-lg-4 offset-lg-0 col-xl-3"
+            >
+              <div class="widget-item">
+                <h4 class="widget-title line-bottom">Newsletter</h4>
+                <div class="widget-newsletter">
+                  <p>
+                    Sign up for our mailing list to get latest updates and
+                    offers.
+                  </p>
+                  <form class="newsletter-form input-btn-group">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Enter your email"
+                    />
+                    <button class="btn btn-theme" type="button">
+                      <i class="icofont-long-arrow-right"></i>
+                    </button>
+                  </form>
+                </div>
+                <div class="widget-social-icons">
+                  <a href="#"><i class="icofont-twitter"></i></a>
+                  <a href="#"><i class="icofont-google-plus"></i></a>
+                  <a href="#"><i class="icofont-pinterest"></i></a>
+                  <a href="#"><i class="icofont-rss"></i></a>
+                  <a href="#"><i class="icofont-facebook"></i></a>
+                  <a href="#"><i class="icofont-dribbble"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <div class="widget-copyright">
+                  <p>
+                    &copy; 2021 <span class="text-uppercase">hope</span>. Made
+                    with <i class="icofont-heart-alt"></i> by
+                    <a target="_blank" href="https://www.hasthemes.com"
+                      >HasThemes</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--== End Footer Area Wrapper ==-->
+
+      <!-- offcanvas-overlay start -->
+      <div class="offcanvas-overlay"></div>
+      <!-- offcanvas-overlay end -->
+      <!-- offcanvas-mobile-menu start -->
+      <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
+        <div class="inner">
+          <div class="border-bottom mb-3 pb-3 text-end">
+            <button class="offcanvas-close">×</button>
+          </div>
+          <div class="offcanvas-head mb-3">
+            <div class="header-top-offcanvas">
+              <p>
+                <i class="icofont-google-map"></i> <span>ADDRESS:</span> 568
+                Elizaberth Str, London, UK
+              </p>
+            </div>
+          </div>
+          <nav class="offcanvas-menu">
+            <ul>
+              <li>
+                <a href="#"><span class="menu-text">Home</span></a>
+                <ul class="offcanvas-submenu">
+                  <li><a href="index.html">Home 1</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span class="menu-text">Services</span></a>
+                <ul class="offcanvas-submenu">
+                  <li>
+                    <a href="services.html">Service</a>
+                  </li>
+                  <li>
+                    <a href="service-details.html">service details</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#"><span class="menu-text">blog</span></a>
+                <ul class="offcanvas-submenu">
+                  <li>
+                    <a href="blog.html">Blog list</a>
+                  </li>
+                  <li>
+                    <a href="blog-details.html">Blog details</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="about.html">about</a>
+              </li>
+
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="offcanvas-social my-4">
+            <ul>
+              <li>
+                <a href="#"><i class="icofont-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icofont-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icofont-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icofont-rss-feed"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icofont-play-alt-1"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="media-wrap">
+            <!-- media-list start -->
+            <li class="media media-list">
+              <span class="media-icon"><i class="icofont-clock-time"></i></span>
+              <div class="media-content">
+                <span class="media-sub-heading">working hours</span>
+                <span class="media-heading">MON - FRI: 9.00 - 21.00 </span>
+              </div>
+            </li>
+            <!-- media-list end -->
+
+            <!-- media-list start -->
+            <li class="media media-list">
+              <span class="media-icon"><i class="icofont-ui-call"></i></span>
+              <div class="media-content">
+                <span class="media-sub-heading">hotline 24/7</span>
+                <a class="media-heading" href="tel:+0962-58-58-258"
+                  >+0962-58-58-258</a
+                >
+              </div>
+            </li>
+            <!-- media-list end -->
+
+            <!-- media-list start -->
+            <li class="media media-list">
+              <span class="media-icon"><i class="icofont-envelope"></i></span>
+              <div class="media-content">
+                <span class="media-sub-heading">email us</span>
+                <a class="media-heading" href="mailto:support@clenora.com.uk"
+                  >support@clenora.com.uk</a
+                >
+              </div>
+            </li>
+            <!-- media-list end -->
           </ul>
         </div>
       </div>
-      <!-- end container --> 
+      <!-- offcanvas-mobile-menu end -->
+
+      <!--== Scroll Top Button ==-->
+      <div class="scroll-to-top"><span class="icofont-rounded-up"></span></div>
     </div>
-    <!-- end footer__menu -->
-    
-    
-  </footer>
-</div>
-<!-- end layout-theme --> 
 
-<span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span> 
+<!-- all js -->
 
-<!--HOME SLIDER--> 
-<script src="plugins/iview/js/iview.js"></script> 
-  <script src="plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+<!--=== Modernizr Min Js ===-->
+<script src="assets/js/modernizr.js"></script>
+<!--=== jQuery Min Js ===-->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<!--=== jQuery Migration Min Js ===-->
+<script src="assets/js/jquery-migrate-3.3.2.min.js"></script>
+<!--=== Bootstrap Min Js ===-->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!--=== jquery UI Min Js ===-->
+<script src="assets/js/jquery-ui.min.js"></script>
+<!--=== Plugin Collection Js ===-->
+<script src="assets/js/plugincollection.js"></script>
+<!--=== Custom Js ===-->
+<script src="assets/js/custom.js"></script>
 
-<!-- SCRIPTS --> 
-<script type="text/javascript" src="plugins/isotope/jquery.isotope.min.js"></script> 
-<script src="js/waypoints.min.js"></script> 
-<script src="plugins/bxslider/jquery.bxslider.min.js"></script> 
-<script src="plugins/prettyphoto/js/jquery.prettyPhoto.js"></script> 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> 
-<script src="plugins/datetimepicker/jquery.datetimepicker.js"></script> 
-<script src="plugins/jelect/jquery.jelect.js"></script> 
-<script src="plugins/nouislider/jquery.nouislider.all.min.js"></script> 
-
-<!-- Loader --> 
-<script src="plugins/loader/js/classie.js"></script> 
-<script src="plugins/loader/js/pathLoader.js"></script> 
-<script src="plugins/loader/js/main.js"></script> 
-<script src="js/classie.js"></script> 
-<!--THEME--> 
-<script src="js/cssua.min.js"></script> 
-<script src="js/wow.min.js"></script> 
-<script src="js/custom.js"></script>
-</body>
+  </body>
 </html>
