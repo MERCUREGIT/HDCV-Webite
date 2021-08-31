@@ -27,7 +27,7 @@ else
 
 
 if($_POST['fname']){
-			$to = "test@test.com";
+			$to = "contact.hdcv@gmail.com ";
 		$from =  $_POST["email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Name: </strong>".$_POST["fname"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["email_address"]."<br />";
