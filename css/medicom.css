@@ -29,7 +29,7 @@ MEDICOM COMMON CLASSES
 
 -------------------------------------------------------------------*/
 footer a{
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 
 img {

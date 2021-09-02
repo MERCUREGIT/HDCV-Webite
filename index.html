@@ -111,18 +111,18 @@
 								<li ><a href="about-us.html">A PROPOS</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES & Spécialités</a>
-										<ul class="dropdown-menu">                                                                                          
-											<li><a href="./sub-pages/rhumatologie.html">Rhumatologie</a></li>
-											<li><a href="./sub-pages/odontostomatologie.html"> Odontostomatologie</a></li>
-											<li><a href="./sub-pages/geniecologie.html"> Gynécologie & obstétrique</a></li>
-											<li><a href="./sub-pages/orl.html"> ORL & Chirurgie Cervico-Faciale</a></li>
-											<li><a href="./sub-pages/cardiologie.html"> Cardiologie</a></li>
-											<li><a href="./sub-pages/Chirurgie Générale.html"> Chirurgie Générale </a></li>
-											<li><a href="./sub-pages/pediatrie.html"> Pédiatrie & vaccination </a></li>
-											<li><a href="./sub-pages/pharmacie.html"> Pharmacie</a></li>
-											<li><a href="./sub-pages/chirugiegeneral.html"> Chirurgie Générale </a></li>
-											<li><a href="appointment.html">Prendre Rendez-vous</a></li>
-										</ul>
+									<ul class="dropdown-menu">                                                                                          
+										<li><a href="./sub-pages/rhumatologie.html">Rhumatologie</a></li>
+										<li><a href="./sub-pages/odontostomatologie.html"> Odontostomatologie</a></li>
+										<li><a href="./sub-pages/geniecologie.html"> Gynécologie & obstétrique</a></li>
+										<li><a href="./sub-pages/orl.html"> ORL & Chirurgie Cervico-Faciale</a></li>
+										<li><a href="./sub-pages/cardiologie.html"> Cardiologie</a></li>
+										<li><a href="./sub-pages/endocrinologie.html"> Endocrinologie </a></li>
+										<li><a href="./sub-pages/pediatrie.html"> Pédiatrie & vaccination </a></li>
+										<li><a href="./sub-pages/pharmacie.html"> Pharmacie</a></li>
+										<li><a href="./sub-pages/chirugiegeneral.html"> Chirurgie Générale </a></li>
+										<li><a href="./appointment.html">Prendre Rendez-vous</a></li>
+									</ul>	
 								<li><a href="gallery.html">Gallerie</a></li>
 								<li><a href="contact-us.html">Contactez-Nous</a></li>
 							</ul>
@@ -143,34 +143,34 @@
 				<div class="item">
 					<img src="images/banner-img3.jpg" alt="" title="">
 					<div class="slider-caption">
-					<p>Bienvenue à  <span>Hopital Distrcit</span> De</p><br/>
+					<p>Bienvenue à  <span>Hopital Du Distrcit</span> De</p><br/>
 					<p>la Cité <span>Verte</span></p>
 					</div>
 				</div>
 				
 				<div class="item">
 					<img src="images/banner-img2.jpg" alt="" title="">
-					<div class="slider-caption">
+					<!-- <div class="slider-caption">
 					<p>meilleure <span>technologie</span> pour</p><br/>
 					<p>de meilleurs <span>soins de santé</span></p>
-					</div>
+					</div> -->
 				</div>
 				
 				<div class="item">
 					<img src="images/banner-img.jpg" alt="" title="">
-					<div class="slider-caption">
+					<!-- <div class="slider-caption">
 					<p>meilleure <span>technologie</span> pour</p><br/>
 					<p>de meilleurs <span>soins de santé</span></p>
-					</div>
+					</div> -->
 				</div>
 				
-				<div class="item">
+				<!-- <div class="item">
 					<img src="images/banner-img4.jpg" alt="" title="">
 					<div class="slider-caption">
 					<p>meilleure <span>technologie</span> pour</p><br/>
 					<p>de meilleurs <span>soins de santé</span></p>
 					</div>
-				</div>
+				</div> -->
 				
 			</div>
 			<div id="content-index">
@@ -381,19 +381,19 @@
 												
 											</div>
 												<div class="col-md-6 border-gray rounded">
-													<h2 class="light bordered">Prennez <span>un Rendez-Vous</span></h2>
+													<h2 class="light bordered">Prenez <span>un Rendez-Vous</span></h2>
 													<div class="appointment-form clearfix">
 													<div class="success" id="message-app" style="display:none;"></div>
 														<form name="appoint_form" id="appoint_form" method="post" action="submit.php" onSubmit="return false">
-															<input type="text" name="app_fname" id="app_fname" placeholder="First Name" onKeyPress="removeChecks();">
-															<input type="text" name="app_lname" id="app_lname" placeholder="Last Name" onKeyPress="removeChecks();">
+															<input type="text" name="app_fname" id="app_fname" placeholder="nom" onKeyPress="removeChecks();">
+															<input type="text" name="app_lname" id="app_lname" placeholder="Prénom" onKeyPress="removeChecks();">
 															<input type="email" name="app_email_address" id="app_email_address" placeholder="Email Address" onKeyPress="removeChecks();">
 															<input type="text" name="app_phone" id="app_phone" placeholder="Phone No">
 															<input type="text" name="datepicker" id="datepicker" placeholder="Appointment Date" onClick="removeChecks();">
 															<select name="gender" id="gender">
-																<option>Male</option>
-																<option>Female</option>
-																<option>Child</option>
+																<option>Homme</option>
+																<option>Femme</option>
+																<option>Enfant</option>
 															</select>
 															<textarea placeholder="Message" name="app_msg" id="app_msg"></textarea>
 															<input type="submit" value="submit" class="btn btn-default btn-rounded" onClick="validateAppoint();">
@@ -469,7 +469,7 @@
 										<td>
 										  Lundi 
 										</td>
-										<td rowspan=4>
+										<td class="align-middle" rowspan=4>
 										  8h00 – 15h30
 										</td>
 									  </tr>
@@ -494,7 +494,7 @@
 										<td>
 										  <p>Lundi – Jeudi</p>
 										</td>
-										<td rowspan="2">
+										<td class="align-middle" rowspan="2">
 										  8h00 – 15h30
 										</td>
 									  </tr>
@@ -562,7 +562,7 @@
 										  <td>
 											Lundi – Mardi <br> Mercredi – Vendredi
 										  </td>
-										  <td rowspan="2">
+										  <td class="align-middle" rowspan="2">
 											8h00 – 15h30
 										  </td>
 										</tr>
@@ -605,7 +605,7 @@
 										  <td>
 											Lundi											
 										  </td>
-										  <td rowspan=5>
+										  <td class="align-middle" rowspan=5>
 											8h00 – 15h30
 										  </td>
 										</tr>
@@ -830,7 +830,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="footer-widget">
-							<h4><span>LIENS UTILES HDCV</span></h4>
+							<h4><span>LIENS UTILES L'HDCV</span></h4>
 									<ul style="list-style: none;">
 									  <li >
 										<i class="fa fa-long-arrow-right"></i>
@@ -848,20 +848,20 @@
 					</div>
 					<div class="col-md-3">
 						<div class="footer-widget">
-							<h4><span>Prenez rende-vous</span></h4>
+							<h4><span>Prenez rendez-vous</span></h4>
 							
 							<div class="newsletter clearfix">
 								<i class="fa fa-plane" aria-hidden="true"></i>
 
-								<p class="newsletter-text">HDCV permet à ses clients de demander des rendez-vous en ligne</p>
+								<p class="newsletter-text">HDCV permet à ses clients de prendre des rendez-vous en ligne</p>
 								<br>
-								<a style="margin-left: 25%;" type="submit" value="subscribe" class="btn btn-default btn-rounded" > Sourscrire </a>
+								<a style="margin-left: 25%;" type="submit" value="subscribe" class="btn btn-default btn-rounded" > Souscrire </a>
 						</div>
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="footer-widget">
-							<h4><span>Entrer en contact</span></h4>
+							<h4><span>prise de contact</span></h4>
 							<div class="contact-widget">
 								<i class="fa fa-home"></i><p>Cameroun-Yaoundé, Cité Verte</p>
 								<i class="fa fa-globe"></i><p><a href="https://www.mercury-cm.com">www.hdcv.org</a>
