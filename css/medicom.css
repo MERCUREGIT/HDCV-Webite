@@ -28,6 +28,9 @@ Primary use:	MEDICAL THEME
 MEDICOM COMMON CLASSES
 
 -------------------------------------------------------------------*/
+footer a{
+	text-transform: uppercase;
+}
 
 img {
 	max-width:100%;
@@ -1336,6 +1339,9 @@ ACCORDIAN STYLE 2
 
 -------------------------------------------------------------------*/
 
+body {
+	position: relative;
+  }
 .accordian-style2 {
 	padding:0;
 	margin:30px 0 20px;
@@ -3419,7 +3425,7 @@ footer.dark .copyright {
 footer.dark .footer-bottom-text {
 	color:#757575;
 	font-size: 12.5px;
-	padding-top:10px;}
+	padding-top:10px;
 }
 .footer-widget p {
 	margin-bottom:10px;
