@@ -29,7 +29,10 @@
     
      <meta name="format-detection" content="telephone=no">
 
-	 
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 	 <!-- Web Font
 	 ============================================= -->
 	 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet">
@@ -54,6 +57,11 @@
 	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 
+
+<!------ Include the above in your HEAD tag ---------->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
 	
 	
     
@@ -71,6 +79,7 @@
     ================================================== -->
 	
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
 
 	
 	
@@ -123,8 +132,44 @@
 										<li><a href="./sub-pages/chirugiegeneral.html"> Chirurgie Générale </a></li>
 										<li><a href="./appointment.html">Prendre Rendez-vous</a></li>
 									</ul>	
-								<li><a href="gallery.html">Gallerie</a></li>
+								<li><a href="gallery.html">Galerie</a></li>
 								<li><a href="contact-us.html">Contactez-Nous</a></li>
+								<li class="border rounded" ><a href="examen.html">Examen Disponible</a></li>
+								<li class=" dropdown" >
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Examens Disponible</a>
+									<ul class="dropdown-menu"> 
+										<li>
+											<a href="./examinations/biochimie.html" >
+												Biochimie
+											</a>
+										</li>     
+										<li>
+											<a href="./examinations/hematologie.html">
+												Hématologie
+											</a>
+										</li>     
+										<li>
+											<a href="./examinations/bacteriologie.html" >
+												Bactériologie
+											</a>
+										</li>
+										<li>
+											<a href="./examinations/parasitologie.html" >
+												Parasitologie
+											</a>
+										</li>   
+										<li>
+											<a href="./examinations/serologie.html" >
+												Sérologie
+											</a>
+										</li>  
+										<li>
+											<a href="./examinations/sang.html"  >
+												BANQUE DE SANG
+											</a>
+										</li>              
+									</ul>
+								</li>
 							</ul>
 						</div>
 					</nav>
@@ -134,8 +179,7 @@
 				<div class="header-bottom-line"></div>
 
 			</header>
-    
-			
+
 			<!-- Main Banner
 			============================================= -->
 			<div id="main-banner" class="owl-carousel main-banner clearfix">
@@ -179,11 +223,11 @@
 						
 						
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-6 col-md-6 animate__animated animate__bounceInRight">
 								<h1>L'hoptal du district de la cité verte</h1>
 								<!-- <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> -->
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 animate__animated animate__bounceInLeft ">
 								<figure><img src="images/appointment-img2.png" alt="image" title="Appointment image" class="img-responsive lady1"></figure>
 							</div>
 							
@@ -191,7 +235,7 @@
 						
 						<!-- Creative Section
 			============================================= -->
-						<section class="creative-sec">
+						<section class="animate__animated animate__slideInLeft  creative-sec">
 							<div class="container">
 								<div class="text-left " >
 									<div class="container">
@@ -408,6 +452,7 @@
 					</div>
 					
 				</section>
+				
 				
     			<section class="appointment-sec text-center bg-gray">
 				
@@ -633,9 +678,7 @@
 					
 				</section>
 	
-	
-			
-    
+
     
 			<!-- Awesome Features
 			============================================= -->
@@ -718,6 +761,7 @@
 						
 					</div>
 					
+					
 					<div class="row">
 						<div class="col-md-6">
 						
@@ -751,7 +795,7 @@
 				
 			</section>
 			
-    
+
 	
 			<div class="height30"></div>
     
@@ -911,6 +955,13 @@
 	<script src="js/jquery.jcarousel.min.js"></script>
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<script src="js/scripts.js"></script>
-	
+	<script>
+		$('.owl-carousel').owlCarousel({
+	  autoplay: true,
+	  center: true,
+	  loop: true,
+	  nav: true,
+	});
+	</script>
   </body>
 </html>
