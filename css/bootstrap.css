@@ -322,7 +322,7 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
-a:focus {} img {
+a:focus img {
     vertical-align: middle;
 }
 .img-responsive {
@@ -4035,7 +4035,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
     transition: all 0.5s ease-in-out;
 }
 .navbar-brand img {
-    width: 200px
+    width: 40px !important;
+    height: 50px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4347,7 +4348,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     .dropdown-menu li {
         padding: 0
     }
-    .dropdown-menu li .fa-angle-right {} .navbar-nav .open .dropdown-menu > li > a {
+    .dropdown-menu li .fa-angle-right .navbar-nav .open .dropdown-menu > li > a {
         line-height: 30px;
     }
     .navbar-nav .open:hover .dropdown-menu > li > a {
@@ -5230,7 +5231,7 @@ a.list-group-item.active:focus .list-group-item-text {
 .panel-group .panel-heading {
     border-bottom: 0;
 }
-.panel-group .panel-heading + .panel-collapse .panel-body {} .panel-group .panel-footer {
+.panel-group .panel-heading + .panel-collapse .panel-body .panel-group .panel-footer {
     border-top: 0;
 }
 .panel-group .panel-footer + .panel-collapse .panel-body {
