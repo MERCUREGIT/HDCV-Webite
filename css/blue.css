@@ -167,27 +167,26 @@ footer.dark .contact-widget p a:hover{ color:#003399;}
 .slider-mini a:hover{ color:#003399; border-color:#003399;}
 .testimonials2-patient-detail span{ color:#003399}
 .creative-sec h1{ color:#003399}
-.creative-sec-thumb .overlay{background:url(../images/blue-overlay.png) repeat;}
+.creative-sec-thumb .overlay{background:url("../images/blue-overlay.png") repeat;}
 .accordian-style2 .panel-heading i{ color:#003399;}
 
 
 
 /*home4*/
 caption a.btn-bordered:hover{ color:#003399}
-.slider-revolution-overlay{ background:url(../images/slider2-overlay.png) repeat;}
+.slider-revolution-overlay{ background:url("../images/slider2-overlay.png") repeat;}
 /*revolution slider nav*/
 .tp-bullets.simplebullets .bullet{background:#80b5d0;}
 
 
 /*sub page*/
-.sub-page-banner .overlay{background:url(../images/blue-overlay.png) repeat;}
+.sub-page-banner .overlay{background:url("../images/blue-overlay.png") repeat;}
 .team-des-btn.active{ background:#003399}
 .team-member-description .team-member-desc-inner{ background:url(../images/team-desc-bg.png) repeat; border:1px solid #1b7fb1; 
 /*box shadow should be light*/
 box-shadow: inset 1px 1px 1px 0px #88c4e2;-moz-box-shadow: inset 1px 1px 1px 0px #88c4e2;-webkit-box-shadow: inset 1px 1px 1px 0px #88c4e2;}
-.team-member-description .team-member-desc-inner span.pointing-arrow{ background:url(../images/team-member-desc-arrow.png) no-repeat;}
+.team-member-description .team-member-desc-inner span.pointing-arrow{ background:url("../images/team-member-desc-arrow.png") no-repeat;}
 i.feature-icon{  background:#003399;}
-i.feature-icon{text-shadow:0px 5px 0px #1F7BA9;}
 .carousel.default .carousel-indicators .active{ background:#003399;}
 .year {color: #003399;}
 .carousel-indicators.dark-indicators .active{ background:#003399 !important}
