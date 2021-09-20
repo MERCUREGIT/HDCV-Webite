@@ -170,7 +170,7 @@ footer.dark .contact-widget p a:hover{ color:#003399;}
 .creative-sec-thumb .overlay{background:url("../images/blue-overlay.png") repeat;}
 .accordian-style2 .panel-heading i{ color:#003399;}
 
-h1,h2,h3,h4,h5,h6 { color:#003399 !important;}
+.main-content > h1, h2 { color:#003399 !important;}
 
 /*home4*/
 caption a.btn-bordered:hover{ color:#003399}
