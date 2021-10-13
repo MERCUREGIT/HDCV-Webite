@@ -16,6 +16,12 @@ a:focus {
     -moz-box-shadow:0 3px 0 #44d644;
     -webkit-box-shadow:0 3px 0 #44d644;
 }
+
+p{
+  text-align: justify !important;
+}
+
+
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
