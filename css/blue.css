@@ -21,6 +21,16 @@ p{
   text-align: justify !important;
 }
 
+li{
+  text-align: justify;
+}
+.organize th {
+  width: 25%;
+}
+.organize td {
+ text-align: center !important;
+ vertical-align: middle !important;
+}
 .team-filter-nav div {
   text-align: left;
   border: #00339988 1px solid;
