@@ -21,6 +21,17 @@ p{
   text-align: justify !important;
 }
 
+.team-filter-nav div {
+  text-align: left;
+  border: #00339988 1px solid;
+  border-radius: 5px;
+  margin: 1px;
+  padding: 5px;
+}
+.team-filter-nav div:hover {
+ background-color:#003399 ;
+ color: white;
+}
 
 .btn-default:hover,
 .btn-default:focus,
