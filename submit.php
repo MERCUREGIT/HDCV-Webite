@@ -1,6 +1,6 @@
 <?php
 if($_POST['news_name']){
-	
+	echo "hello its working"
 			$to = "test@test.com";
 		$from =  $_POST["news_email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Name: </strong>".$_POST["news_name"]."<br />";
@@ -54,7 +54,8 @@ else
 
 
 if($_POST['app_fname']){
-			$to = "test@test.com";
+	echo "test working";
+			$to = "ngumbukafon@gmail.com";
 		$from =  $_POST["app_email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>First Name: </strong>".$_POST["app_fname"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Last Name: </strong>".$_POST["app_lname"]."<br />";

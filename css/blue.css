@@ -33,14 +33,15 @@ li{
 }
 .team-filter-nav div {
   text-align: left;
-  border: #00339988 1px solid;
-  border-radius: 5px;
-  margin: 1px;
-  padding: 5px;
+  border: none !important;
+ width: 100% !important;
 }
 .team-filter-nav div:hover {
- background-color:#003399 ;
- color: white;
+  font-style: italic !important;
+  background-color: #003399 !important;
+  color: white !important;
+  border: none !important;
+ 
 }
 
 .btn-default:hover,

@@ -97,7 +97,7 @@
 			
 			$.ajax({
 							type: "POST",
-							url: "submit.php",
+							url: "../submit.php",
 							data: $("#appoint_form").serialize(),
 							success: function(msg)
 							{
