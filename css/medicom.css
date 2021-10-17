@@ -34,6 +34,17 @@ footer a{
 	text-transform: lowercase;
 }
 
+ p a {
+	text-align: left;
+	text-overflow: hidden;
+	text-justify: left;
+}
+
+.gallery-item-info  {
+	text-align: left !important;
+	text-justify: left !important;
+	overflow-wrap: break-word;
+}
 img {
 	max-width:100%;
 }

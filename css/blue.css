@@ -145,6 +145,9 @@ footer h4 span{ border-bottom:1px solid #003399;}
 footer.light .tweet i{color:#003399;}
 footer.light .contact-widget p a:hover{ color:#003399;}
 footer.dark .contact-widget p a:hover{ color:#003399;}
+footer a{
+  color: #44d644 !important;
+}
 
 /*home 2*/
 .service-box:hover{ background:#003399;}
