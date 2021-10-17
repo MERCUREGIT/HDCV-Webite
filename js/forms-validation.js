@@ -111,7 +111,11 @@
 								
 								
 								$('#message-app').fadeIn(2000);
-								document.getElementById("message-app").innerHTML = "Thanks for contacting us.";
+								document.getElementById("message-app").innerHTML = "Merci de nous avoir contacter.";
+								document.getElementById("app_fname").value = "";
+								document.getElementById("app_lname").value = "";
+								document.getElementById("app_email_address").value = "";
+								getElementById("datepicker").value = "";
 								return true;
 								}
 							}
