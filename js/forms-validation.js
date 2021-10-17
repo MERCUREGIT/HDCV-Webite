@@ -97,7 +97,7 @@
 			
 			$.ajax({
 							type: "POST",
-							url: "../submit.php",
+							url: "submit.php",
 							data: $("#appoint_form").serialize(),
 							success: function(msg)
 							{
@@ -191,10 +191,10 @@
 		
 		function removeChecks(){
 		
-		var fname = document.getElementById("fname");
-		var email_address = document.getElementById("email_address");
-		var news_name = document.getElementById("news_name");
-		var news_email_address = document.getElementById("news_email_address");
+		var fname = document.getElementById("app_fname");
+		var email_address = document.getElementById("app_email_address");
+		var news_name = document.getElementById("app_news_name");
+		var news_email_address = document.getElementById("app_news_email_address");
 	
 		if(fname.value != ""){
 		fname.style.borderColor = "#C9C9C9";
