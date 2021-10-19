@@ -3,7 +3,11 @@ a {
 }
 a:hover,
 a:focus {
-  color: #003399;
+  color: #003399 ;
+}
+
+.partners {
+  color: #003399 ;
 }
 .caption a:hover { color: #44d644 !important;}
 .bg-default {
