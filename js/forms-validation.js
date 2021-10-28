@@ -108,11 +108,13 @@
 								$('#message-app').fadeIn(2000);
 								$("#appoint_form").trigger("reset");
 								$('#message-app').fadeOut(1000);
+								target.value = "Envoyer"
 								return true;
 								}else{
 								$('#message-app').fadeIn(2000);
 								$("#appoint_form").trigger("reset");
 								$('#message-app').fadeOut(1000);
+								target.value = "Envoyer"
 								return true;
 								}
 							},
