@@ -57,6 +57,7 @@
 					
 					
 	function validateAppoint(){
+		var target = event.target;
 		target.value = "en cours..."
 		var app_fname = document.getElementById("app_fname");
 		var app_lname = document.getElementById("app_lname");
