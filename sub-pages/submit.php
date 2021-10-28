@@ -1,28 +1,5 @@
 <?php
-if($_POST['news_name']){
-			//$to = "contact.hdcv@gmail.com";
-			$to = "ngumbukafon@gmail.com";
-		$from =  $_POST["news_email_address"];
-		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Nom: </strong>".$_POST["news_name"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["news_email_address"]."<br />";
-		$subject = 'Newsletter Subscription';		
-		$headers = "From: ".$_POST["news_email_address"]."\n";
-		$headers .= "MIME-Version: 1.0" . "\r\n";
-		$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-		
-	    $send =	mail($to,$subject,$message,$headers);
 
-
-
-if($send)
-{
-	echo "Reussite";
-}
-else
-{
-	echo "error";
-	}
-}
 
 
 
