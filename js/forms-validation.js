@@ -108,13 +108,15 @@
 								
 								$('#message-app').fadeIn(2000);
 								$("#appoint_form").trigger("reset");
+								document.getElementById("message-app'").innerHTML = "Merci de nous avoir contacter.";
 								$('#message-app').fadeOut(1000);
 								event.target.value = "en cours...";
 								return true;
 								}else{
 								$('#message-app').fadeIn(2000);
 								$("#appoint_form").trigger("reset");
-								$('#message-app').fadeOut(1000);
+								document.getElementById("message-app'").innerHTML = "Merci de nous avoir contacter.";
+								$('#message-app').fadeOut(4000);
 								event.target.value = "en cours...";
 								return true;
 								}
