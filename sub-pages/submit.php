@@ -1,6 +1,7 @@
 <?php
 if($_POST['news_name']){
-			$to = "contact.hdcv@gmail.com";
+			//$to = "contact.hdcv@gmail.com";
+			$to = "ngumbukafon@gmail.com";
 		$from =  $_POST["news_email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Nom: </strong>".$_POST["news_name"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["news_email_address"]."<br />";
@@ -26,7 +27,8 @@ else
 
 
 if($_POST['fname']){
-			$to = "contact.hdcv@gmail.com ";
+			//$to = "contact.hdcv@gmail.com ";
+			$to = "ngumbukafon@gmail.com ";
 		$from =  $_POST["email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Nom: </strong>".$_POST["fname"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["email_address"]."<br />";
@@ -54,7 +56,8 @@ else
 
 if($_POST['app_fname']){
 	echo "test working";
-			$to = "contact.hdcv@gmail.com";
+			$to = "ngumbukafon@gmail.com";
+			
 		$from =  $_POST["app_email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Nom: </strong>".$_POST["app_fname"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Prénom: </strong>".$_POST["app_lname"]."<br />";
