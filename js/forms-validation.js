@@ -57,9 +57,7 @@
 					
 					
 	function validateAppoint(){
-
-		console.log("validation of appointment form testing");
-		var myform = $("#appoint_form");
+		
 		var app_fname = document.getElementById("app_fname");
 		var app_lname = document.getElementById("app_lname");
 		var app_email_address = document.getElementById("app_email_address");
@@ -97,28 +95,8 @@
 	
 		if(flag == 0)
 		{	
-			$.ajax({
-							type: "POST",
-							url: "./submit.php",
-							data: $("#appoint_form").serialize(),
-							success: function(msg)
-							{
-								alert("testing");
-								if(msg == 'success'){
-								
-								$('#message-app').fadeIn(2000);
-								myform.resetForm();
-								return true;
-								}else{
-								$('#message-app').fadeIn(2000);
-								myform.resetForm();
-								return true;
-								}
-							},
-							error: function (request, status, error) {
-								alert(request.responseText);
-							}
-						});
+			
+			return true
 			
 		}
 	}
