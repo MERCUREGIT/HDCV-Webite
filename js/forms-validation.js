@@ -57,6 +57,9 @@
 					
 					
 	function validateAppoint(){
+
+		alert=("validation of appoint ment")
+		var myform = $("#appoint_form");
 		var app_fname = document.getElementById("app_fname");
 		var app_lname = document.getElementById("app_lname");
 		var app_email_address = document.getElementById("app_email_address");
@@ -94,30 +97,26 @@
 	
 		if(flag == 0)
 		{	
-			
 			$.ajax({
 							type: "POST",
-							url: "submit.php",
+							url: "./submit.php",
 							data: $("#appoint_form").serialize(),
 							success: function(msg)
 							{
-								//alert(msg);
+								alert("testing");
 								if(msg == 'success'){
 								
 								$('#message-app').fadeIn(2000);
-								document.getElementById("message-app").innerHTML = "Thank You! We'll contact you shortly";
+								myform.resetForm();
 								return true;
 								}else{
-								
-								
 								$('#message-app').fadeIn(2000);
-								document.getElementById("message-app").innerHTML = "Merci de nous avoir contacter.";
-								document.getElementById("app_fname").value = "";
-								document.getElementById("app_lname").value = "";
-								document.getElementById("app_email_address").value = "";
-								getElementById("datepicker").value = "";
+								myform.resetForm();
 								return true;
 								}
+							},
+							error: function (request, status, error) {
+								alert(request.responseText);
 							}
 						});
 			
