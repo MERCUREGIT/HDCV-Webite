@@ -58,7 +58,7 @@
 					
 	function validateAppoint(){
 
-		alert=("validation of appoint ment")
+		alert("validation of appointment form testing");
 		var myform = $("#appoint_form");
 		var app_fname = document.getElementById("app_fname");
 		var app_lname = document.getElementById("app_lname");
