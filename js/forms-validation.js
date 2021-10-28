@@ -57,7 +57,7 @@
 					
 					
 	function validateAppoint(){
-		
+		target.value = "en cours..."
 		var app_fname = document.getElementById("app_fname");
 		var app_lname = document.getElementById("app_lname");
 		var app_email_address = document.getElementById("app_email_address");
@@ -96,7 +96,30 @@
 		if(flag == 0)
 		{	
 			
-			return true
+			$.ajax({
+							type: "POST",
+							url: "./submit.php",
+							data: $("#appoint_form").serialize(),
+							success: function(msg)
+							{
+								
+								if(msg == 'success'){
+								
+								$('#message-app').fadeIn(2000);
+								$("#appoint_form").trigger("reset");
+								$('#message-app').fadeOut(1000);
+								return true;
+								}else{
+								$('#message-app').fadeIn(2000);
+								$("#appoint_form").trigger("reset");
+								$('#message-app').fadeOut(1000);
+								return true;
+								}
+							},
+							error: function (request, status, error) {
+								alert(request.responseText);
+							}
+						});
 			
 		}
 	}
