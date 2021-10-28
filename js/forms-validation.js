@@ -57,8 +57,8 @@
 					
 					
 	function validateAppoint(){
-		var target = event.target;
-		target.value = "en cours..."
+		event.target.value = "en cours...";
+		
 		var app_fname = document.getElementById("app_fname");
 		var app_lname = document.getElementById("app_lname");
 		var app_email_address = document.getElementById("app_email_address");
@@ -109,13 +109,13 @@
 								$('#message-app').fadeIn(2000);
 								$("#appoint_form").trigger("reset");
 								$('#message-app').fadeOut(1000);
-								target.value = "Envoyer"
+								event.target.value = "en cours...";
 								return true;
 								}else{
 								$('#message-app').fadeIn(2000);
 								$("#appoint_form").trigger("reset");
 								$('#message-app').fadeOut(1000);
-								target.value = "Envoyer"
+								event.target.value = "en cours...";
 								return true;
 								}
 							},
