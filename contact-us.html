@@ -110,14 +110,14 @@
 						</div>
 						<div class="col-12 col-md-6">
 							<h2 class="light text-center">Laissez-nous un <span>message</span></h2>
+
 							<div class="contact-form clearfix">
-								<div id="message-contact" class="success" style="display:none;">Merci ! nous vous contacterons sous peu.</div>
-								<form name="contact_form" id="contact_form" action="submit.php" method="post" onSubmit="return false;">
-									<input type="text" name="fname" id="fname" placeholder="Nom" onKeyPress="removeChecks();">
-									<input type="text" name="email_address" id="email_address" placeholder="Adresse e-mail" onKeyPress="removeChecks();">
-									<input style="width: 100%;" type="text" name="subject" id="subject" placeholder="Sujet">
-									<textarea placeholder="Message" name="msg" id="msg"></textarea>
-									<input type="submit" class="btn btn-default align-self-center" value="Submit" onClick="validateContact();">
+								<div id="error_message"></div>
+								<form  action="contact.php" method="post" >
+									<input type="text" name="name_contact" id="fname" placeholder="Nom" onKeyPress="removeChecks();">
+									<input type="text" name="email_contact" id="email_address" placeholder="Adresse e-mail" onKeyPress="removeChecks();">
+									<textarea placeholder="Message" name="message_contact" id="msg"></textarea>
+									<input type="submit" class="btn btn-default align-self-center" value="Submit" >
 								</form>
 							</div>
 						</div>

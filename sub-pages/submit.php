@@ -8,29 +8,7 @@ if($_POST['fname']){
 			$to = "ngumbukafon@gmail.com ";
 		$from =  $_POST["email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Nom: </strong>".$_POST["fname"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["email_address"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Subject: </strong>".$_POST["subject"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Message: </strong>".$_POST["msg"]."<br />";
-		$subject = 'Contact Us';		
-		$headers = "From: ".$_POST["email_address"]."\n";
-		$headers .= "MIME-Version: 1.0" . "\r\n";
-		$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-		
-	    $send =	mail($to,$subject,$message,$headers);
-
-
-
-if($send)
-{
-	echo "success";
-}
-else
-{
-	echo "error";
-	}
-}
-
-
+ngumbuka
 if($_POST['app_fname']){
 	echo "test working";
 			$to = "ngumbukafon@gmail.com";
