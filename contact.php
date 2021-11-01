@@ -72,11 +72,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo "Merci <strong>$name_contact</strong>,<br> votre message a été soumis. Nous vous contacterons sous peu.";
 	echo "</div>";
 
-} else {
-
-	echo 'ERREURE!';
-
-}
+} 
 
 
 ?>
