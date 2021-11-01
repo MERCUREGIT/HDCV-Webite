@@ -1,6 +1,6 @@
 <?php
 
-
+echo "<script>alert('hello tesing php')</script>"
 if(!$_POST) exit;
 
 // Email verification, do not edit.
@@ -73,6 +73,6 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo "</div>";
 
 } 
-
+error_log();
 
 ?>
