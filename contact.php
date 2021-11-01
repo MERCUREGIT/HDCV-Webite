@@ -60,7 +60,7 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $user = "$email_contact";
 $usersubject = "Merci à vous";
-$userheaders = "From: contact@ifopess.org\n";
+$userheaders = "From: ngumbukafon@gmail.com\n";
 $usermessage = "Merci d'avoir contacté IFOPESS. Nous vous répondrons sous peu !";
 mail($user,$usersubject,$usermessage,$userheaders);
 
