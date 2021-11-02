@@ -1,6 +1,7 @@
 <?php
 
-echo "<script>alert('hello tesing php')</script>"
+
+
 if(!$_POST) exit;
 
 // Email verification, do not edit.
@@ -60,9 +61,11 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $user = "$email_contact";
 $usersubject = "Merci à vous";
-$userheaders = "From: ngumbukafon@gmail.com\n";
+$userheaders = "From: contact@ifopess.org\n";
 $usermessage = "Merci d'avoir contacté IFOPESS. Nous vous répondrons sous peu !";
 mail($user,$usersubject,$usermessage,$userheaders);
+
+
 
 if(mail($address, $e_subject, $msg, $headers)) {
 
@@ -72,7 +75,11 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo "Merci <strong>$name_contact</strong>,<br> votre message a été soumis. Nous vous contacterons sous peu.";
 	echo "</div>";
 
-} 
-error_log();
+} else {
+
+	echo 'ERREURE!';
+
+}
+
 
 ?>
