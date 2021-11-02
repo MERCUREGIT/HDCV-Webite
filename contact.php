@@ -43,7 +43,9 @@ $e_body = "Vous-avez été contacter par $name_contact $name_contact avec un mes
 $e_content = "\"$message_contact\"" . PHP_EOL . PHP_EOL;
 $e_reply = "Vous pouvez contacter $name_contact par e-mail, $email_contact";
 
-$msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
+//$msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
+
+$msg = "Vous-avez été contacter par $name_contact $name_contact avec un message supplémentaire °°\"$message_contact\" °°  Vous pouvez contacter $name_contact par e-mail, $email_contact";
 
 $headers = "From: $email_contact" . PHP_EOL;
 $headers .= "Reply-To: $email_contact" . PHP_EOL;
@@ -57,7 +59,7 @@ $userheaders = "From: contact@ifopess.org\n";
 $usermessage = "Merci d'avoir contacté L'hoptal du districte de la cité verte. Nous vous répondrons sous peu !";
 mail($user,$usersubject,$usermessage,$userheaders);
 
-echo "<script>console.log('$name_contact, $email_contact, $message_contact, subject,: $e_subject, message: $msg, headers: $headers')</script>";
+
 
 if(mail("ngumbukafon@gmail.com", $e_subject, $msg, $headers)) {
 
