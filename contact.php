@@ -57,6 +57,8 @@ $userheaders = "From: contact@ifopess.org\n";
 $usermessage = "Merci d'avoir contacté L'hoptal du districte de la cité verte. Nous vous répondrons sous peu !";
 mail($user,$usersubject,$usermessage,$userheaders);
 
+echo "<script>console.log('$name_contact, $email_contact, $message_contact, subject,: $e_subject, message: $msg, headers: $headers')</script>";
+
 if(mail("ngumbukafon@gmail.com", $e_subject, $msg, $headers)) {
 
 	// Message de réussite
