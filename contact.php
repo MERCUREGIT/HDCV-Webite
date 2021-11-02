@@ -1,7 +1,6 @@
 <?php
 
 
-
 if(!$_POST) exit;
 
 // Email verification, do not edit.
@@ -15,14 +14,10 @@ $name_contact     = $_POST['name_contact'];
 $email_contact    = $_POST['email_contact'];
 $message_contact = $_POST['message_contact'];
 
+
+
 if(trim($name_contact) == '') {
 	echo '<div class="error_message">You must enter your Name.</div>';
-	exit();
-} else if(trim($name_contact ) == '') {
-	echo '<div class="error_message">You must enter your Last name.</div>';
-	exit();
-} else if(trim($email_contact) == '') {
-	echo '<div class="error_message">Please enter a valid email address.</div>';
 	exit();
 } else if(!isEmail($email_contact)) {
 	echo '<div class="error_message">You have enter an invalid e-mail address, try again.</div>';
@@ -32,9 +27,6 @@ if(trim($name_contact) == '') {
 	exit();
 }
 
-if(get_magic_quotes_gpc()) {
-	$message_contact = stripslashes($message_contact);
-}
 
 
 
@@ -62,10 +54,8 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 $user = "$email_contact";
 $usersubject = "Merci à vous";
 $userheaders = "From: contact@ifopess.org\n";
-$usermessage = "Merci d'avoir contacté IFOPESS. Nous vous répondrons sous peu !";
+$usermessage = "Merci d'avoir contacté L'hoptal du districte de la cité verte. Nous vous répondrons sous peu !";
 mail($user,$usersubject,$usermessage,$userheaders);
-
-
 
 if(mail("ngumbukafon@gmail.com", $e_subject, $msg, $headers)) {
 
