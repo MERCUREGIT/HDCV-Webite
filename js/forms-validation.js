@@ -121,8 +121,9 @@
 								return true;
 								}
 							},
-							error: function (request, status, error) {
-								alert(request.responseText);
+							error: function () {
+								alert("Erreur d'envoi");
+								event.target.value = "Envoyer";
 							}
 						});
 			
@@ -162,7 +163,7 @@
 							data: $("#newsletter_form").serialize(),
 							success: function(msg)
 							{
-								//alert(msg);
+								
 								if(msg == 'success'){
 								$('#newsletter_form').fadeOut(500);
 								$('#message-news').fadeIn(2000);

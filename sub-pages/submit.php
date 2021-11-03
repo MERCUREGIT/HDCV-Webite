@@ -8,9 +8,8 @@ if($_POST['fname']){
 			$to = "ngumbukafon@gmail.com ";
 		$from =  $_POST["email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Nom: </strong>".$_POST["fname"]."<br />";
-ngumbuka
+
 if($_POST['app_fname']){
-	echo "test working";
 			$to = "ngumbukafon@gmail.com";
 			
 		$from =  $_POST["app_email_address"];
