@@ -61,7 +61,7 @@ mail($user,$usersubject,$usermessage,$userheaders);
 
 
 
-if(mail("ngumbukafon@gmail.com", $e_subject, $msg, $headers)) {
+if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Message de réussite
 	echo "<div id='success_page' style='padding:25px 0'>";
