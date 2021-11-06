@@ -134,7 +134,7 @@
 	
 		else if(msg.value=="")
 		{
-			app_email_address.style.borderColor = "#FE847B";
+			msg.style.borderColor = "#FE847B";
 			flag = 1;
 		}
 		
@@ -147,7 +147,7 @@
 							url: "./contact.php",
 							data: $("#contact_form").serialize(),
 							success: function(send)
-							{
+							{	console.log("send message", send)
 								$('#message-app').fadeIn(2000);
 								$("#contact_form").trigger("reset");
 								target_element.value = "Envoyer";

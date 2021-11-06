@@ -42,15 +42,11 @@ if($_POST['app_fname']){
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Appointment Date: </strong>".$_POST["datepicker"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Gender: </strong>".$_POST["genre"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Message: </strong>".$_POST["app_msg"]."<br />";
-		$subject = 'Prise de rendez-vous';		
+		$subject = 'Prise de rendez-vous';
 		$headers = "From: ".$_POST["app_email_address"]."\n";
-		$headers .= "MIME-Version: 1.0" . "\r\n";
-		$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-		
+		// $headers .= "MIME-Version: 1.0" . "\r\n";
+		// $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 	    $send =	mail($to,$subject,$message,$headers);
-
-
-
 if($send)
 {
 	echo "success";
