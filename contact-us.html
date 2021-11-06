@@ -112,12 +112,13 @@
 							<h2 class="light text-center">Laissez-nous un <span>message</span></h2>
 
 							<div class="contact-form clearfix">
+								<div class="success" id="message-app" style="display:none;"></div>
 								<div id="error_message"></div>
-								<form  action="./contact.php" method="post" >
+								<form id="contact_form" action="contact.php" onSubmit="return false" method="post" >
 									<input type="text" name="name_contact" id="fname" placeholder="Nom" onKeyPress="removeChecks();">
 									<input type="text" name="email_contact" id="email_address" placeholder="Adresse e-mail" onKeyPress="removeChecks();">
 									<textarea placeholder="Message" name="message_contact" id="msg"></textarea>
-									<input type="submit" class="btn btn-default align-self-center" value="Submit" >
+									<input type="submit" class="btn btn-default align-self-center" onclick="conatctHdcv()" value="Submit" >
 								</form>
 							</div>
 						</div>

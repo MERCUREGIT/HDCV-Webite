@@ -32,7 +32,7 @@
 
 
 if($_POST['app_fname']){
-	echo "<script>console.log('entry point 01')</script>";
+
 		$to = "contact.hdcv@gmail.com";
 		$from =  $_POST["app_email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>First Name: </strong>".$_POST["app_fname"]."<br />";

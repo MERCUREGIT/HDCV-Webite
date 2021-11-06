@@ -31,7 +31,7 @@ if(trim($name_contact) == '') {
 
 
 //$address = "HERE your email address";
-$address = "contact.hdcv@gmail.com";
+$address = "ngumbukafon@gmail.com";
 
 
 
@@ -55,7 +55,7 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $user = "$email_contact";
 $usersubject = "Merci à vous";
-$userheaders = "From: contact.hdcv@gmail.com\n";
+$userheaders = "From: $address\n";
 $usermessage = "Merci d'avoir contacté L'hoptal du districte de la cité verte. Nous vous répondrons sous peu !";
 mail($user,$usersubject,$usermessage,$userheaders);
 
@@ -71,7 +71,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 } 
 else{
-	echo "error"
+	echo "error";
 }
 
 

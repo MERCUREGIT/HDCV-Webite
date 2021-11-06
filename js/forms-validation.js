@@ -114,6 +114,58 @@
 		}
 	}
 	
+	function conatctHdcv(){
+		let fname = document.getElementById("fname");
+		let email_address = document.getElementById("email_address");
+		let msg = document.getElementById("msg");
+		
+		var flag = 0;
+		
+		if(fname.value == "" )
+		{
+			fname.style.borderColor = "#FE847B";
+			flag = 1;
+		}
+		else if(email_address.value == "" )
+		{
+			email_address.style.borderColor = "#FE847B";
+			flag = 1;
+		}
+	
+		else if(msg.value=="")
+		{
+			app_email_address.style.borderColor = "#FE847B";
+			flag = 1;
+		}
+		
+		if(flag == 0)
+		{	
+			const target_element = event.target;
+			target_element.value = "en cours...";
+			$.ajax({
+							type: "POST",
+							url: "./contact.php",
+							data: $("#contact_form").serialize(),
+							success: function(send)
+							{
+								$('#message-app').fadeIn(2000);
+								$("#contact_form").trigger("reset");
+								target_element.value = "Envoyer";
+								document.getElementById("message-app").innerHTML = "Merci de nous avoir contacter.";
+								$('#message-app').fadeOut(1000);
+								
+								return true;
+								
+							},
+							error: function () {
+							
+								target_element.value = "Envoyer";
+							}
+						});
+		}
+	}
+	
+
 
 
 
