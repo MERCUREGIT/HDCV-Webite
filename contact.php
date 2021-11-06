@@ -70,6 +70,9 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo "</div>";
 
 } 
+else{
+	echo "error"
+}
 
 
 ?>

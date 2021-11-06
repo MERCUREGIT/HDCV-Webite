@@ -33,7 +33,7 @@
 
 if($_POST['app_fname']){
 	echo "<script>console.log('entry point 01')</script>";
-			$to = "contact.hdcv@gmail.com";
+		$to = "contact.hdcv@gmail.com";
 		$from =  $_POST["app_email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>First Name: </strong>".$_POST["app_fname"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Last Name: </strong>".$_POST["app_lname"]."<br />";
@@ -42,7 +42,7 @@ if($_POST['app_fname']){
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Appointment Date: </strong>".$_POST["datepicker"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Gender: </strong>".$_POST["genre"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Message: </strong>".$_POST["app_msg"]."<br />";
-		$subject = 'Book Appointment';		
+		$subject = 'Prise de rendez-vous';		
 		$headers = "From: ".$_POST["app_email_address"]."\n";
 		$headers .= "MIME-Version: 1.0" . "\r\n";
 		$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
