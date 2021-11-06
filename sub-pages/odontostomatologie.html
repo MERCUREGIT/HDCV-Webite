@@ -343,20 +343,20 @@
                                 <h2 class="light bordered">Prenez <span>un Rendez-Vous</span> Avec un expert en Odontostomatologie</h2>
                                 <div class="appointment-form clearfix">
                                    <div class="success" id="message-app" style="display:none;"></div>
-                                    <form name="appoint_form" id="appoint_form" method="post" action="submit.php" onSubmit="return false">
-                                        <input type="text" name="app_fname" id="app_fname" placeholder="First Name" onKeyPress="removeChecks();">
-                                        <input type="text" name="app_lname" id="app_lname" placeholder="Last Name" onKeyPress="removeChecks();">
-                                        <input type="email" name="app_email_address" id="app_email_address" placeholder="Email Address" onKeyPress="removeChecks();">
-                                        <input type="text" name="app_phone" id="app_phone" placeholder="Phone No">
-                                        <input type="text" name="datepicker" id="datepicker" placeholder="Appointment Date" onClick="removeChecks();">
-                                        <select name="gender" id="gender">
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                            <option>Child</option>
-                                        </select>
-                                        <textarea placeholder="Message" name="app_msg" id="app_msg"></textarea>
-                                        <input type="submit" value="submit" class="btn btn-default btn-rounded" onClick="validateAppoint();">
-                                    </form>
+                                   <form name="appoint_form" id="appoint_form" method="post" action="submit.php" onSubmit="return false">
+                                    <input type="text" name="app_fname" id="app_fname" placeholder="Nom" onKeyPress="removeChecks();">
+                                    <input type="text" name="app_lname" id="app_lname" placeholder="Prénom" onKeyPress="removeChecks();">
+                                    <input type="email" name="app_email_address" id="app_email_address" placeholder="Adresse e-mail" onKeyPress="removeChecks();">
+                                    <input type="text" name="app_phone" id="app_phone" placeholder="Phone No">
+                                    <input type="text" name="datepicker" id="datepicker" placeholder="Date de rendez-vous" onClick="removeChecks();">
+                                    <select name="genre" id="genre">
+                                      <option>Homme</option>
+                                      <option>Femme</option>
+                                      <option>Enfant</option>
+                                    </select>
+                                    <textarea placeholder="Message" name="app_msg" id="app_msg"></textarea>
+                                    <input type="submit" value="Envoyer" class="btn btn-default btn-rounded" onClick="validateAppoint();">
+                                  </form>
                                 </div>
                             </div>
 						</div>
