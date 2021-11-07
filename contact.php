@@ -56,7 +56,7 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 $user = "$email_contact";
 $usersubject = "Merci à vous";
 $userheaders = "From: $address\n";
-$usermessage = "Merci d'avoir contacté L'hoptal du districte de la cité verte. Nous vous répondrons sous peu !";
+$usermessage = "Merci d'avoir contacté l'hôpital de district de la cité verte. Nous vous répondrons au plus vite.";
 mail($user,$usersubject,$usermessage,$userheaders);
 
 
