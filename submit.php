@@ -2,10 +2,10 @@
 if($_POST['fname']){
 			$to = "contact@hdcv.org";
 		$from =  $_POST["email_address"];
-		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Name: </strong>".$_POST["fname"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["email_address"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Subject: </strong>".$_POST["subject"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Message: </strong>".$_POST["msg"]."<br />";
+		$message = "<strong>Name: </strong>".$_POST["fname"]."<br />";
+		$message .= "<strong>Email Address: </strong>".$_POST["email_address"]."<br />";
+		$message .= "<strong>Subject: </strong>".$_POST["subject"]."<br />";
+		$message .= " <strong>Message: </strong>".$_POST["msg"]."<br />";
 		$subject = 'Contact Us';		
 		$headers = "From: ".$_POST["email_address"]."\n";
 		$headers .= "MIME-Version: 1.0" . "\r\n";
@@ -27,16 +27,15 @@ else
 
 
 if($_POST['app_fname']){
-	echo "<script>console.log('entry point 01')</script>";
 			$to = "contact@hdcv.org";
 		$from =  $_POST["app_email_address"];
-		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>First Name: </strong>".$_POST["app_fname"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Last Name: </strong>".$_POST["app_lname"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["app_email_address"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Phone No: </strong>".$_POST["app_phone"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Appointment Date: </strong>".$_POST["datepicker"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Gender: </strong>".$_POST["gender"]."<br />";
-		$message .= "&nbsp;&nbsp;&nbsp;&nbsp; <strong>Message: </strong>".$_POST["app_msg"]."<br />";
+		$message = "<strong>Nom & Prénom: </strong>".$_POST["app_fname"]."<br />";
+		$message .= "<strong>Last Name: </strong>".$_POST["app_lname"]."<br />";
+		$message .= "<strong>Email Address: </strong>".$_POST["app_email_address"]."<br />";
+		$message .= "<strong>Phone No: </strong>".$_POST["app_phone"]."<br />";
+		$message .= "<strong>Appointment Date: </strong>".$_POST["datepicker"]."<br />";
+		$message .= "<strong>Gender: </strong>".$_POST["gender"]."<br />";
+		$message .= "<strong>Message: </strong>".$_POST["app_msg"]."<br />";
 		$subject = 'Book Appointment';		
 		$headers = "From: ".$_POST["app_email_address"]."\n";
 		$headers .= "MIME-Version: 1.0" . "\r\n";

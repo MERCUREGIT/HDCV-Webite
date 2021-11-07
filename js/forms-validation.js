@@ -100,7 +100,7 @@
 								$('#message-app').fadeIn(2000);
 								$("#appoint_form").trigger("reset");
 								target_element.value = "Envoyer";
-								document.getElementById("message-app").innerHTML = "Merci de nous avoir contacter.";
+								document.getElementById("message-app").innerHTML = "Merci de nous avoir contacté.";
 								$('#message-app').fadeOut(1000);
 								
 								return true;
@@ -151,7 +151,7 @@
 								$('#message-app').fadeIn(2000);
 								$("#contact_form").trigger("reset");
 								target_element.value = "Envoyer";
-								document.getElementById("message-app").innerHTML = "Merci de nous avoir contacter.";
+								document.getElementById("message-app").innerHTML = "Merci de nous avoir contacté.";
 								$('#message-app').fadeOut(1000);
 								
 								return true;
