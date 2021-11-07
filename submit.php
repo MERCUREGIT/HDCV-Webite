@@ -1,6 +1,6 @@
 <?php
 if($_POST['fname']){
-			$to = "contact.hdcv@gmail.com 00";
+			$to = "contact@hdcv.org";
 		$from =  $_POST["email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Name: </strong>".$_POST["fname"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["email_address"]."<br />";
@@ -28,7 +28,7 @@ else
 
 if($_POST['app_fname']){
 	echo "<script>console.log('entry point 01')</script>";
-			$to = "contact.hdcv@gmail.com";
+			$to = "contact@hdcv.org";
 		$from =  $_POST["app_email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>First Name: </strong>".$_POST["app_fname"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Last Name: </strong>".$_POST["app_lname"]."<br />";

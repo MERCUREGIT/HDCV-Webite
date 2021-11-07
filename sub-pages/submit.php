@@ -33,7 +33,7 @@
 
 if($_POST['app_fname']){
 
-		$to = "contact.hdcv@gmail.com";
+		$to = "contact@hdcv.org";
 		$from =  $_POST["app_email_address"];
 		$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>First Name: </strong>".$_POST["app_fname"]."<br />";
 		$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Last Name: </strong>".$_POST["app_lname"]."<br />";

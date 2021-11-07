@@ -31,7 +31,7 @@ if(trim($name_contact) == '') {
 
 
 //$address = "HERE your email address";
-$address = "ngumbukafon@gmail.com";
+$address = "contact@hdcv.org";
 
 
 
